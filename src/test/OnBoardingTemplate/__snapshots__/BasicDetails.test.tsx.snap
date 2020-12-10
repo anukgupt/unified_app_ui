@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly all components with no errors 1`] = `
+<div
+  className="basic-details"
+>
+  <div
+    className="client-id"
+  >
+    <div
+      className=""
+    >
+      <div
+        className="subHead"
+      >
+        Client Id
+      </div>
+    </div>
+    <dl>
+      <dt>
+        <label
+          className="input-label"
+          htmlFor="clientId"
+        >
+          Client Id
+        </label>
+      </dt>
+      <dd>
+        <input
+          className="input-text"
+          id="clientId"
+          onChange={[MockFunction]}
+          type="text"
+          value=""
+        />
+        <p
+          className="note"
+        >
+          ClientId for onboarding registration
+        </p>
+      </dd>
+    </dl>
+  </div>
+  <div
+    className="webhook-url"
+  >
+    <div
+      className=""
+    >
+      <div
+        className="subHead"
+      >
+        Webhook
+      </div>
+    </div>
+    <dl>
+      <dt>
+        <label
+          className="input-label"
+          htmlFor="webhookURL"
+        >
+          WebhookURL
+        </label>
+      </dt>
+      <dd>
+        <input
+          className="input-text"
+          id="webhookURL"
+          onChange={[MockFunction]}
+          type="text"
+          value=""
+        />
+        <p
+          className="note"
+        >
+          Events will POST to this URL. Read our 
+          <a
+            href="https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/about-webhooks"
+          >
+            webhook documentation
+          </a>
+           for more information.
+        </p>
+      </dd>
+    </dl>
+  </div>
+  <div
+    className="callback-url"
+  >
+    <div
+      className=""
+    >
+      <div
+        className="subHead"
+      >
+        Callback
+      </div>
+    </div>
+    <dl>
+      <dt>
+        <label
+          className="input-label"
+          htmlFor="callbackURL"
+        >
+          CallbackURL
+        </label>
+      </dt>
+      <dd>
+        <input
+          className="input-text"
+          id="callbackURL"
+          onChange={[MockFunction]}
+          type="text"
+          value=""
+        />
+        <p
+          className="note"
+        >
+          The full URL to redirect to after a user authorizes an installation.
+        </p>
+      </dd>
+    </dl>
+  </div>
+</div>
+`;

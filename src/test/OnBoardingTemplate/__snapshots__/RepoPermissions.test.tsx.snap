@@ -1,0 +1,4758 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders repo permissions with default values 1`] = `
+<div
+  className="permissions"
+>
+  <div
+    aria-label="repository-permissions"
+    className="repository-permissions"
+  >
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Actions
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Workflows, workflow runs and artifacts.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Administration
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-administration"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Repository creation, deletion, settings, teams, and collaborators.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Checks
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-checks"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Checks on code
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Content references
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Get notified of content references, and create content attachments.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Contents
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-contents"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Repository contents, commits, branches, downloads, releases, and merges.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Deployments
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-contents"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Deployments and deployment statuses.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Issues
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-issues"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Issues and related comments, assignees, labels, and milestones.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Metadata
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#metadata-permissions"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Search repositories, list collaborators, and access repository metadata.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Packages
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-packages"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Packages published to the GitHub Package Platform.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Pages 
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-pages"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Retrieve Pages statuses, configuration, and builds, as well as create new builds.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Pull requests
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-pull-requests"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Pull requests and related comments, assignees, labels, milestones, and merges.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Webhooks
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-repository-hooks"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Manage the post-receive hooks for a repository.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Projects
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-repository-projects"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Manage repository projects, columns, and cards.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Admin
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Secrets
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Manage repository secrets.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Security events
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          View and manage security events like code scanning alerts.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Single file
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-single-file"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Manage just a single file.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Commit statuses
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/#permission-on-statuses"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Commit statuses
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read & Write
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Dependabot alerts
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v4/object/repositoryvulnerabilityalert/"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Retrieve Dependabot alerts.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div
+      className="repo-permission-item tableobject"
+    >
+      <div
+        className="tableobject-cell-primary"
+      >
+        <div
+          className="text-bold"
+        >
+          Workflows
+          <a
+            aria-label="info"
+            className="link"
+            href="https://docs.github.com/v3/apps/permissions/"
+          >
+            <img
+              alt=""
+              className="info-img"
+              height="16px"
+              src="icon.png"
+              width="16px"
+            />
+          </a>
+        </div>
+        <p
+          className="note"
+        >
+          Update GitHub Action workflow files.
+        </p>
+      </div>
+      <div
+        className="tableobject-cell-intermediate"
+      >
+        Access:
+      </div>
+      <div
+        className="input-mandatory"
+        hidden={true}
+      >
+        mandatory
+      </div>
+      <div
+        className="tableobject-cell-secondary padding-input-access"
+      >
+        <details
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          onToggle={[Function]}
+          open={false}
+        >
+          <summary
+            className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+          >
+            <span
+              className="selectmenu-button-text"
+            >
+              No access
+            </span>
+            <img
+              alt=""
+              className="down-img"
+              src="downarrow.png"
+            />
+          </summary>
+          <div
+            className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+            role="menu"
+          >
+            <div
+              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
+              width="212px"
+            >
+              <header
+                className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+              >
+                <h3
+                  className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
+                >
+                  <span>
+                    Select an access level
+                  </span>
+                  <button
+                    aria-label="close menu"
+                    className="cross-img-button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <img
+                      alt=""
+                      className="cross-img"
+                      height="10px"
+                      src="cross.png"
+                      width="10px"
+                    />
+                  </button>
+                </h3>
+              </header>
+              <div
+                className="SelectMenuList-uflcju-0 erwbXU"
+              >
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={false}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      No access
+                    </div>
+                  </div>
+                </a>
+                <a
+                  aria-checked={false}
+                  className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
+                  onClick={[Function]}
+                  role="menuitemcheckbox"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="StyledOcticon-sc-7ly0uy-0 fBbUTV SelectMenu-icon SelectMenu-selected-icon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z\\"></path>",
+                      }
+                    }
+                    fill="currentColor"
+                    height={16}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 16 16"
+                    width={16}
+                  />
+                  <div
+                    className="input-access"
+                  >
+                    <div
+                      className="input-access-tick"
+                    >
+                      <img
+                        alt=""
+                        aria-label="checked"
+                        className="tick-img"
+                        height="16px"
+                        hidden={true}
+                        src="tick.png"
+                        width="16px"
+                      />
+                    </div>
+                    <div
+                      className="input-access-text"
+                    >
+                      Read-only
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</div>
+`;

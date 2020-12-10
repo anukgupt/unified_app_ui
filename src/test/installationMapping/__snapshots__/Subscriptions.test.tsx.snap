@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders subscriptions 1`] = `
+<div
+  className="formitem-subscription"
+>
+  <span>
+    Select your Azure Subscription
+  </span>
+  <details
+    className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv formitem-dropdown"
+    onToggle={[Function]}
+    open={false}
+  >
+    <summary
+      className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE formitem-button"
+    >
+      <span
+        className="formitem-button-value"
+      >
+        Select Subscription
+      </span>
+      <img
+        alt=""
+        className="formitem-dropdown-arrow"
+        src="downarrow.png"
+      />
+    </summary>
+    <div
+      className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+      role="menu"
+    >
+      <div
+        className="SelectMenuModal__Modal-fv9zw3-0 eBmamO"
+        width="370px"
+      >
+        <form
+          className="SelectMenuFilter__StyledForm-k2jey9-0 SCYOx"
+        >
+          <span
+            className="TextInput__Wrapper-sc-156lfck-1 fUJJVy selectmenu-filter TextInput-wrapper"
+            height="18px"
+            width="100%"
+          >
+            <input
+              aria-label="Search for a subscription"
+              className="TextInput__Input-sc-156lfck-0 cjybCM"
+              onChange={[Function]}
+              placeholder="Search for a subscription"
+              type="text"
+              value=""
+            />
+          </span>
+        </form>
+        <div
+          className="SelectMenuList-uflcju-0 erwbXU"
+        />
+      </div>
+    </div>
+  </details>
+</div>
+`;

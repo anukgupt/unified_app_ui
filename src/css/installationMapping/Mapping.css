@@ -1,0 +1,228 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: Segoe UI;    
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+}
+.full-size {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+} 
+.background-image {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin-left: 20%;
+}
+.inner {
+    margin-right: 20%;
+}
+.outer {  
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    width: 480px;
+    margin-top: 150px;
+    margin-right: 92px;
+    margin-left: auto;
+}
+.heading-container {
+    display: flex;
+    align-items: center;
+}
+.heading-image {
+    width: 36px;
+    height: 28.73px;
+    margin-left: 58px;
+    margin-top: 52px;
+    height: 36px;
+}
+.heading-text {
+    width: 116px;
+    margin-left: 15px;
+    margin-top: 68px;
+}
+.heading-app-text {
+    height: 33px;
+    margin-left: 55px;
+    margin-top: 23px;
+    font-size: 24px;
+}
+.form-items {
+    display: flex;
+    flex-direction: column;
+    margin-left: 56px;
+}
+.formitem-tenant {
+    margin-top: 30px;
+    height: 20px;
+    font-size: 14px;
+}
+.formitem-dropdown {
+    align-items: center;
+    display: flex;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 370px;
+    margin-top: 8px;
+}
+.formitem-button {
+    height: 18px;
+}
+.formitem-button-value {
+    float: left;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+.formitem-dropdown-arrow {
+    float: right;
+    height: 8px;
+    width: 11.02px;
+    margin-top: 5px;
+}
+.formitem-subscription {
+    font-size: 14px;
+    margin-top: 70px;
+}
+.margin-top {
+    margin-top: 90px;
+}
+.selectmenu-filter {
+    height: 18px;
+}
+.formitem-header {
+    font-size: 14px
+}
+.all-subscriptions-list, .select-subscriptions-list {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e4e8;
+}
+.input-checkbox-label {
+    font-size: 13px;
+    line-height: 18px;
+    color: #323130;
+    font-weight: 400;
+}
+.input-checkbox {
+    width: 16px;
+    height: 16px;
+    background: #0078D4;
+    margin-right: 8px;
+}
+.selected-subscriptions-list {
+    margin-top: 20px;
+    margin-right: 49px;
+    border-bottom: 1px solid #e1e4e8;
+}
+.heading-subscriptions-selected {
+    font-size: 12px;
+}
+.subs-list {
+    margin-top: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.overflow {
+    height: 80px;
+    overflow-y: auto;
+}
+.subscription-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    align-items: center;
+}
+.subscription-item-name {
+    width: 90%;
+}
+.subscription-remove-button {
+    border: 0;
+    box-shadow: none;
+    background-color: #ffffff;
+}
+.remove-button {
+    float: right;
+    font-size: 13px;
+    font-weight: 400;
+    color: #0078D4; 
+}
+.link {
+    color: #005a9e;
+    cursor: pointer;
+    outline: transparent;
+    text-decoration: none;
+}
+.subscription-link {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.description-link {
+    margin-top: 40px;
+    margin-right: 49px;
+    height: 34px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.text-right {
+    text-align: right;
+}
+.bolt-button {
+    background-color: #0078d4;
+    margin-top: 40px;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 25px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    height: 35px;
+    width: 70px;
+}
+input, select, textarea, button {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}  
+* {
+    box-sizing: inherit;
+}
+.errorMessage, .errMessage {
+    color: red;
+}
+.successMessage, .errorMessage {
+    padding-left: 55px;
+    padding-top: 15px;
+    display: table;
+}
+.successMessage {
+    color: green;
+}
+.errMessage {
+    display: table;
+}
+.success-img, .error-img, .err-img {
+    position: relative;
+    top: 5px;
+    display: table-cell;
+}
+.success-msg, .error-msg, .err-msg {
+    display: table-cell;
+    padding-left: 10px;
+}
+.err-msg { 
+    font-size: 13px;
+}
