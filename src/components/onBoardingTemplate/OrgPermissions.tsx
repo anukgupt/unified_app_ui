@@ -75,8 +75,7 @@ class OrgPermissions extends React.Component<IOrgPermissionsProps> {
                     </div>
                     <div className="tableobject-cell-secondary">
                         <SelectMenu>
-                            <Button as="summary" className="selectmenu-button">
-                                <span className="selectmenu-button-text">{this.props.onBoardingTemplateObject.orgPermissions[organizationPermission.id]}</span>
+                            <Button as="summary" className="selectmenu-button" style={{ 'padding': '2px', 'width': '180px', 'border': 'border: 1px solid #8A8886', 'borderRadius': '2px', 'backgroundColor': '#fff' }}>                                <span className="selectmenu-button-text">{this.props.onBoardingTemplateObject.orgPermissions[organizationPermission.id]}</span>
                                 <img className="down-img" alt="" src={down} />
                             </Button>
                             <SelectMenu.Modal width="212px">

@@ -102,7 +102,7 @@ class RepoPermissions extends React.Component<IRepoPermissionsProps> {
                     {<div className="input-mandatory" hidden={hidemandatoryLabel}>{Constants.mandatoryLabel}</div>}
                     <div className="tableobject-cell-secondary padding-input-access">
                         <SelectMenu>
-                            <Button as="summary" className="selectmenu-button">
+                            <Button as="summary" className="selectmenu-button" style={{ 'padding': '2px', 'width': '180px', 'border': 'border: 1px solid #8A8886', 'borderRadius': '2px', 'backgroundColor': '#fff' }}>
                                 <span className="selectmenu-button-text">{this.props.onBoardingTemplateObject.repoPermissions[repo.id]}</span>
                                 <img className="down-img" alt="" src={down} />
                             </Button>
