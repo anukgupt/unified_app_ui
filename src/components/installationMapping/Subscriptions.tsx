@@ -81,6 +81,7 @@ export class Subscription extends React.Component<ISubscriptionProps, Subscripti
   }
 
   render() {
+    var style = { 'height': '24px', 'padding': '0' };
     let isPresentInFinalList: boolean = false;
     let showSubscriptionFilter: boolean = false;
     if (this.state.subscriptionParameters.filteredSubscriptions.length > 0) {
@@ -95,7 +96,7 @@ export class Subscription extends React.Component<ISubscriptionProps, Subscripti
             isPresentInFinalList = true;
           }
         });
-        options.push(<SelectMenu.Item key={subs.subscriptionId} className="formitem-selectmenu-item">
+        options.push(<SelectMenu.Item style={style} key={subs.subscriptionId} className="formitem-selectmenu-item">
           <input id={subs.displayName} className="input-checkbox" type="checkbox" checked={isPresentInFinalList} onClick={(event) => this.onSelectingSubscription(event)} />
           <label htmlFor={subs.displayName} className="input-checkbox-label">{subs.displayName}</label>
         </SelectMenu.Item>);
@@ -125,30 +126,26 @@ export class Subscription extends React.Component<ISubscriptionProps, Subscripti
         }
       </div>
     }
-    var formitemSubscription = "formitem-subscription";
-    if (this.props.errorOnFetchingTenants) {
-      formitemSubscription = "formitem-subscription margin-top";
-    }
     return (
-      <div className={formitemSubscription}>
+      <div className="formitem-subscription">
         <span>{Constants.SelectAzureSubscriptionLabel}</span>
         <SelectMenu className="formitem-dropdown">
-          <Button className="formitem-button" as="summary">
+          <Button className="formitem-button" as="summary" style={{ 'border': '1px solid #8A8886', 'borderRadius': '2px', 'backgroundColor': '#fff', 'padding': '0', 'height': '24px' }}>
             <span className="formitem-button-value">{Constants.SelectSubscriptionsPlaceholder}</span>
             <img className="formitem-dropdown-arrow" alt="" src={down} />
           </Button>
           {
             showSubscriptionFilter &&
             <SelectMenu.Modal width="370px">
-              <SelectMenu.Filter height="18px" className="selectmenu-filter" onChange={(event: any) => { this.onFilteringSubscription(event.target.value) }} placeholder={Constants.DropdownFilterAriaLabel} value={this.state.subscriptionParameters.searchValueForSubscriptions} aria-label={Constants.DropdownFilterAriaLabel} />
-              <SelectMenu.Header className="formitem-header">{Constants.AllSubscriptionsRadioButtonValue}</SelectMenu.Header>
+              <SelectMenu.Filter style={style} onChange={(event: any) => { this.onFilteringSubscription(event.target.value) }} placeholder={Constants.DropdownFilterAriaLabel} value={this.state.subscriptionParameters.searchValueForSubscriptions} aria-label={Constants.DropdownFilterAriaLabel} />
+              <SelectMenu.Header style={{ 'height': '24px', 'padding': '0 0 0 10px' }}>{Constants.AllSubscriptionsRadioButtonValue}</SelectMenu.Header>
               <SelectMenu.List className="all-subscriptions-list">
-                <SelectMenu.Item key={Constants.AllSubscriptionsRadioButtonValue} className="formitem-selectmenu-item">
+                <SelectMenu.Item style={style} key={Constants.AllSubscriptionsRadioButtonValue} className="formitem-selectmenu-item">
                   <input id="input-checkbox-all" className="input-checkbox" type="checkbox" checked={this.state.subscriptionParameters.subscriptionRadioButtonValue == Constants.AllSubscriptionsRadioButtonValue} onClick={() => this.onAllSubscriptionsCheckBox()} value={Constants.AllSubscriptionsRadioButtonNote} />
                   <label htmlFor="input-checkbox-all" className="input-checkbox-label">{Constants.AllSubscriptionsRadioButtonNote}</label>
                 </SelectMenu.Item>
               </SelectMenu.List>
-              <SelectMenu.Header className="formitem-header">{Constants.SelectSubscriptionsRadioButtonValue}</SelectMenu.Header>
+              <SelectMenu.Header style={{ 'height': '24px', 'padding': '8px 0 0 10px' }}>{Constants.SelectSubscriptionsRadioButtonValue}</SelectMenu.Header>
               <SelectMenu.List className="select-subscriptions-list">
                 {
                   options
@@ -159,7 +156,7 @@ export class Subscription extends React.Component<ISubscriptionProps, Subscripti
           {
             !showSubscriptionFilter &&
             <SelectMenu.Modal width="370px">
-              <SelectMenu.Filter height="18px" className="selectmenu-filter" onChange={(event: any) => { this.onFilteringSubscription(event.target.value) }} placeholder={Constants.DropdownFilterAriaLabel} value={this.state.subscriptionParameters.searchValueForSubscriptions} aria-label={Constants.DropdownFilterAriaLabel} />
+              <SelectMenu.Filter onChange={(event: any) => { this.onFilteringSubscription(event.target.value) }} placeholder={Constants.DropdownFilterAriaLabel} value={this.state.subscriptionParameters.searchValueForSubscriptions} aria-label={Constants.DropdownFilterAriaLabel} />
               <SelectMenu.List>
               </SelectMenu.List>
             </SelectMenu.Modal>
@@ -172,6 +169,9 @@ export class Subscription extends React.Component<ISubscriptionProps, Subscripti
             <span className="err-msg">{Constants.ErrorOnFetchingSubscriptionsMessage}</span>
           </div>
         }
+        <div className="subscription-link">
+          <a className="link" href={Constants.CreateSubscriptionLink} rel="noopener noreferrer" target="_blank"> {Constants.CreateSubscription}</a>
+        </div>
         {
           this.state.subscriptionParameters.finalSubscriptionList && this.state.subscriptionParameters.finalSubscriptionList.length > 0 &&
           <div className="selected-subscriptions-list">
@@ -211,7 +211,7 @@ export class Subscription extends React.Component<ISubscriptionProps, Subscripti
     }
     else {
       subs[subscriptionParameters.finalSubscriptionList.length] = tobeAddedSubscription[0];
-      subscriptionParameters.finalSubscriptionList = subs;
+      subscriptionParameters.finalSubscriptionList = subs.sort(this.sortFinalSubscriptionsList());
       subscriptionParameters.subscriptionRadioButtonValue = Constants.SelectSubscriptionsRadioButtonValue;
       this.props.setSubscriptionIds(subscriptionParameters.finalSubscriptionList);
       this.setSubscriptionParameters(subscriptionParameters);
@@ -243,13 +243,26 @@ export class Subscription extends React.Component<ISubscriptionProps, Subscripti
     });
     if (indexToBeDeleted !== -1) {
       subs.splice(indexToBeDeleted, 1);
-      subscriptionParameters.finalSubscriptionList = subs;
+      subscriptionParameters.finalSubscriptionList = subs.sort(this.sortFinalSubscriptionsList());
       this.props.setSubscriptionIds(subscriptionParameters.finalSubscriptionList);
       if (subscriptionParameters.finalSubscriptionList.length == 0) {
         subscriptionParameters.subscriptionRadioButtonValue = Constants.AllSubscriptionsRadioButtonValue;
         this.props.setSubscriptionIds(subscriptionParameters.subscriptions);
       }
       this.setSubscriptionParameters(subscriptionParameters);
+    }
+  }
+
+  sortFinalSubscriptionsList() {
+    return function (a: any, b: any) {
+      if (a && a.displayName && b && b.displayName) {
+        if (a.displayName.toLowerCase() > b.displayName.toLowerCase()) {
+          return 1;
+        } else if (a.displayName.toLowerCase() < b.displayName.toLowerCase()) {
+          return -1;
+        }
+      }
+      return 0;
     }
   }
 }

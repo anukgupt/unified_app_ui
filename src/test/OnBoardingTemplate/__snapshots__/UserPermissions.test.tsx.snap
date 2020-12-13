@@ -27,9 +27,7 @@ exports[`renders user permissions with default values 1`] = `
       <div
         className="tableobject-cell-primary"
       >
-        <div
-          className="text-bold"
-        >
+        <div>
           Block another user
           <a
             aria-label="info"
@@ -60,12 +58,22 @@ exports[`renders user permissions with default values 1`] = `
         className="tableobject-cell-secondary"
       >
         <details
-          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv select-menu"
           onToggle={[Function]}
           open={false}
         >
           <summary
             className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "border": "1px solid #8A8886",
+                "borderRadius": "2px",
+                "lineHeight": "18px",
+                "padding": "2px",
+                "width": "180px",
+              }
+            }
           >
             <span
               className="selectmenu-button-text"
@@ -83,16 +91,24 @@ exports[`renders user permissions with default values 1`] = `
             role="menu"
           >
             <div
-              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
-              width="212px"
+              className="SelectMenuModal__Modal-fv9zw3-0 cdquUy"
+              width="185px"
             >
               <header
                 className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+                style={
+                  Object {
+                    "height": "24px",
+                    "padding": "0",
+                  }
+                }
               >
                 <h3
                   className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
                 >
-                  <span>
+                  <span
+                    className="select-menu-header-text"
+                  >
                     Select an access level
                   </span>
                   <button
@@ -118,9 +134,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="blockanotheruserNo access0"
+                  id="blockanotheruser0"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -171,9 +193,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="blockanotheruserRead-only1"
+                  id="blockanotheruser1"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -224,9 +252,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="blockanotheruserRead & Write2"
+                  id="blockanotheruser2"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -285,9 +319,7 @@ exports[`renders user permissions with default values 1`] = `
       <div
         className="tableobject-cell-primary"
       >
-        <div
-          className="text-bold"
-        >
+        <div>
           Email addresses
           <a
             aria-label="info"
@@ -318,12 +350,22 @@ exports[`renders user permissions with default values 1`] = `
         className="tableobject-cell-secondary"
       >
         <details
-          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv select-menu"
           onToggle={[Function]}
           open={false}
         >
           <summary
             className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "border": "1px solid #8A8886",
+                "borderRadius": "2px",
+                "lineHeight": "18px",
+                "padding": "2px",
+                "width": "180px",
+              }
+            }
           >
             <span
               className="selectmenu-button-text"
@@ -341,16 +383,24 @@ exports[`renders user permissions with default values 1`] = `
             role="menu"
           >
             <div
-              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
-              width="212px"
+              className="SelectMenuModal__Modal-fv9zw3-0 cdquUy"
+              width="185px"
             >
               <header
                 className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+                style={
+                  Object {
+                    "height": "24px",
+                    "padding": "0",
+                  }
+                }
               >
                 <h3
                   className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
                 >
-                  <span>
+                  <span
+                    className="select-menu-header-text"
+                  >
                     Select an access level
                   </span>
                   <button
@@ -376,9 +426,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="emailaddressesNo access0"
+                  id="emailaddresses0"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -429,9 +485,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="emailaddressesRead-only1"
+                  id="emailaddresses1"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -482,9 +544,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="emailaddressesRead & Write2"
+                  id="emailaddresses2"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -543,9 +611,7 @@ exports[`renders user permissions with default values 1`] = `
       <div
         className="tableobject-cell-primary"
       >
-        <div
-          className="text-bold"
-        >
+        <div>
           Followers
           <a
             aria-label="info"
@@ -576,12 +642,22 @@ exports[`renders user permissions with default values 1`] = `
         className="tableobject-cell-secondary"
       >
         <details
-          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv select-menu"
           onToggle={[Function]}
           open={false}
         >
           <summary
             className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "border": "1px solid #8A8886",
+                "borderRadius": "2px",
+                "lineHeight": "18px",
+                "padding": "2px",
+                "width": "180px",
+              }
+            }
           >
             <span
               className="selectmenu-button-text"
@@ -599,16 +675,24 @@ exports[`renders user permissions with default values 1`] = `
             role="menu"
           >
             <div
-              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
-              width="212px"
+              className="SelectMenuModal__Modal-fv9zw3-0 cdquUy"
+              width="185px"
             >
               <header
                 className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+                style={
+                  Object {
+                    "height": "24px",
+                    "padding": "0",
+                  }
+                }
               >
                 <h3
                   className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
                 >
-                  <span>
+                  <span
+                    className="select-menu-header-text"
+                  >
                     Select an access level
                   </span>
                   <button
@@ -634,9 +718,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="followersNo access0"
+                  id="followers0"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -687,9 +777,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="followersRead-only1"
+                  id="followers1"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -740,9 +836,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="followersRead & Write2"
+                  id="followers2"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -801,9 +903,7 @@ exports[`renders user permissions with default values 1`] = `
       <div
         className="tableobject-cell-primary"
       >
-        <div
-          className="text-bold"
-        >
+        <div>
           GPG keys
           <a
             aria-label="info"
@@ -834,12 +934,22 @@ exports[`renders user permissions with default values 1`] = `
         className="tableobject-cell-secondary"
       >
         <details
-          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv select-menu"
           onToggle={[Function]}
           open={false}
         >
           <summary
             className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "border": "1px solid #8A8886",
+                "borderRadius": "2px",
+                "lineHeight": "18px",
+                "padding": "2px",
+                "width": "180px",
+              }
+            }
           >
             <span
               className="selectmenu-button-text"
@@ -857,16 +967,24 @@ exports[`renders user permissions with default values 1`] = `
             role="menu"
           >
             <div
-              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
-              width="212px"
+              className="SelectMenuModal__Modal-fv9zw3-0 cdquUy"
+              width="185px"
             >
               <header
                 className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+                style={
+                  Object {
+                    "height": "24px",
+                    "padding": "0",
+                  }
+                }
               >
                 <h3
                   className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
                 >
-                  <span>
+                  <span
+                    className="select-menu-header-text"
+                  >
                     Select an access level
                   </span>
                   <button
@@ -892,9 +1010,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="gpgkeysNo access0"
+                  id="gpgkeys0"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -945,9 +1069,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="gpgkeysRead-only1"
+                  id="gpgkeys1"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -998,9 +1128,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="gpgkeysRead & Write2"
+                  id="gpgkeys2"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1059,9 +1195,7 @@ exports[`renders user permissions with default values 1`] = `
       <div
         className="tableobject-cell-primary"
       >
-        <div
-          className="text-bold"
-        >
+        <div>
           Git SSH keys
           <a
             aria-label="info"
@@ -1092,12 +1226,22 @@ exports[`renders user permissions with default values 1`] = `
         className="tableobject-cell-secondary"
       >
         <details
-          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv select-menu"
           onToggle={[Function]}
           open={false}
         >
           <summary
             className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "border": "1px solid #8A8886",
+                "borderRadius": "2px",
+                "lineHeight": "18px",
+                "padding": "2px",
+                "width": "180px",
+              }
+            }
           >
             <span
               className="selectmenu-button-text"
@@ -1115,16 +1259,24 @@ exports[`renders user permissions with default values 1`] = `
             role="menu"
           >
             <div
-              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
-              width="212px"
+              className="SelectMenuModal__Modal-fv9zw3-0 cdquUy"
+              width="185px"
             >
               <header
                 className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+                style={
+                  Object {
+                    "height": "24px",
+                    "padding": "0",
+                  }
+                }
               >
                 <h3
                   className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
                 >
-                  <span>
+                  <span
+                    className="select-menu-header-text"
+                  >
                     Select an access level
                   </span>
                   <button
@@ -1150,9 +1302,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="gitsshkeysNo access0"
+                  id="gitsshkeys0"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1203,9 +1361,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="gitsshkeysRead-only1"
+                  id="gitsshkeys1"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1256,9 +1420,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="gitsshkeysRead & Write2"
+                  id="gitsshkeys2"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1317,9 +1487,7 @@ exports[`renders user permissions with default values 1`] = `
       <div
         className="tableobject-cell-primary"
       >
-        <div
-          className="text-bold"
-        >
+        <div>
           Plan
           <a
             aria-label="info"
@@ -1350,12 +1518,22 @@ exports[`renders user permissions with default values 1`] = `
         className="tableobject-cell-secondary"
       >
         <details
-          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv select-menu"
           onToggle={[Function]}
           open={false}
         >
           <summary
             className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "border": "1px solid #8A8886",
+                "borderRadius": "2px",
+                "lineHeight": "18px",
+                "padding": "2px",
+                "width": "180px",
+              }
+            }
           >
             <span
               className="selectmenu-button-text"
@@ -1373,16 +1551,24 @@ exports[`renders user permissions with default values 1`] = `
             role="menu"
           >
             <div
-              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
-              width="212px"
+              className="SelectMenuModal__Modal-fv9zw3-0 cdquUy"
+              width="185px"
             >
               <header
                 className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+                style={
+                  Object {
+                    "height": "24px",
+                    "padding": "0",
+                  }
+                }
               >
                 <h3
                   className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
                 >
-                  <span>
+                  <span
+                    className="select-menu-header-text"
+                  >
                     Select an access level
                   </span>
                   <button
@@ -1408,9 +1594,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="planNo access0"
+                  id="plan0"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1461,9 +1653,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="planRead-only1"
+                  id="plan1"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1522,9 +1720,7 @@ exports[`renders user permissions with default values 1`] = `
       <div
         className="tableobject-cell-primary"
       >
-        <div
-          className="text-bold"
-        >
+        <div>
           Starring
           <a
             aria-label="info"
@@ -1555,12 +1751,22 @@ exports[`renders user permissions with default values 1`] = `
         className="tableobject-cell-secondary"
       >
         <details
-          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv select-menu"
           onToggle={[Function]}
           open={false}
         >
           <summary
             className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "border": "1px solid #8A8886",
+                "borderRadius": "2px",
+                "lineHeight": "18px",
+                "padding": "2px",
+                "width": "180px",
+              }
+            }
           >
             <span
               className="selectmenu-button-text"
@@ -1578,16 +1784,24 @@ exports[`renders user permissions with default values 1`] = `
             role="menu"
           >
             <div
-              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
-              width="212px"
+              className="SelectMenuModal__Modal-fv9zw3-0 cdquUy"
+              width="185px"
             >
               <header
                 className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+                style={
+                  Object {
+                    "height": "24px",
+                    "padding": "0",
+                  }
+                }
               >
                 <h3
                   className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
                 >
-                  <span>
+                  <span
+                    className="select-menu-header-text"
+                  >
                     Select an access level
                   </span>
                   <button
@@ -1613,9 +1827,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="starringNo access0"
+                  id="starring0"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1666,9 +1886,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="starringRead-only1"
+                  id="starring1"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1719,9 +1945,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="starringRead & Write2"
+                  id="starring2"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1780,9 +2012,7 @@ exports[`renders user permissions with default values 1`] = `
       <div
         className="tableobject-cell-primary"
       >
-        <div
-          className="text-bold"
-        >
+        <div>
           Watching 
           <a
             aria-label="info"
@@ -1813,12 +2043,22 @@ exports[`renders user permissions with default values 1`] = `
         className="tableobject-cell-secondary"
       >
         <details
-          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv"
+          className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv select-menu"
           onToggle={[Function]}
           open={false}
         >
           <summary
             className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE selectmenu-button"
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "border": "1px solid #8A8886",
+                "borderRadius": "2px",
+                "lineHeight": "18px",
+                "padding": "2px",
+                "width": "180px",
+              }
+            }
           >
             <span
               className="selectmenu-button-text"
@@ -1836,16 +2076,24 @@ exports[`renders user permissions with default values 1`] = `
             role="menu"
           >
             <div
-              className="SelectMenuModal__Modal-fv9zw3-0 eAAiUL"
-              width="212px"
+              className="SelectMenuModal__Modal-fv9zw3-0 cdquUy"
+              width="185px"
             >
               <header
                 className="SelectMenuHeader__StyledHeader-sc-1njvopm-1 iFZGXN"
+                style={
+                  Object {
+                    "height": "24px",
+                    "padding": "0",
+                  }
+                }
               >
                 <h3
                   className="SelectMenuHeader__SelectMenuTitle-sc-1njvopm-0 ggeHFz"
                 >
-                  <span>
+                  <span
+                    className="select-menu-header-text"
+                  >
                     Select an access level
                   </span>
                   <button
@@ -1871,9 +2119,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="watchingNo access0"
+                  id="watching0"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1924,9 +2178,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="watchingRead-only1"
+                  id="watching1"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"
@@ -1977,9 +2237,15 @@ exports[`renders user permissions with default values 1`] = `
                   aria-checked={false}
                   className="SelectMenuItem__StyledItem-sc-13zu9d-0 jDrvbI"
                   href="#"
-                  id="watchingRead & Write2"
+                  id="watching2"
                   onClick={[Function]}
                   role="menuitemcheckbox"
+                  style={
+                    Object {
+                      "height": "24px",
+                      "padding": "0px",
+                    }
+                  }
                 >
                   <svg
                     aria-hidden="true"

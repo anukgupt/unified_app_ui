@@ -1,8 +1,8 @@
 
 export const msalConfig = {
-    appId: 'a79fd610-c111-4b27-8bcb-d122bb624b96',
+    appId: '86570ef4-5443-4de9-bb47-1542755d3565',
     authority: 'https://login.microsoftonline.com/',
-    redirectUri: 'http://localhost:3000/',
+    redirectUri: 'https://gua.azurewebsites.net/',
     scopes: ["User.Read"],
     azureScopes: [
         'https://management.azure.com/user_impersonation',
