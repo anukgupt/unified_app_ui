@@ -27,7 +27,6 @@ export interface onBoardingObject {
     repoPermissions: { [key: string]: string };
     orgPermissions: { [key: string]: string };
     userPermissions: { [key: string]: string };
-    domainList: string[];
     showOnBoardingTemplate: boolean;
     isUserAuthorized: boolean;
     isTemplateSucessfullySaved: boolean;
@@ -52,7 +51,6 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
             repoPermissions: {},
             orgPermissions: {},
             userPermissions: {},
-            domainList: [],
             showOnBoardingTemplate: true,
             isUserAuthorized: false,
             isTemplateSucessfullySaved: false,
@@ -69,8 +67,7 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
         let onBoardingTemplateObject = this.state.onBoardingTemplateObject;
         try {
             this.accessToken = await this.props.login('');
-            // onBoardingTemplateObject.isUserAuthorized = this.props.isAuthenticated;
-            onBoardingTemplateObject.isUserAuthorized = true;
+            onBoardingTemplateObject.isUserAuthorized = this.props.isAuthenticated;
             onBoardingTemplateObject.isUserAdminFlowInProcess = false;
             this.setTemplateState(onBoardingTemplateObject);
         }
@@ -105,7 +102,7 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
                             {
                                 this.state.onBoardingTemplateObject.isUserAuthorized &&
                                 <form className="onboarding-form" id="onboarding-template" action="">
-                                    <Tabs selectedIndex={this.state.onBoardingTemplateObject.selectedTabIndex}>
+                                    <Tabs selectedIndex={this.state.onBoardingTemplateObject.selectedTabIndex} onSelect={() => { }}>
                                         <TabList className="tab-list">
                                             <Tab className={tabs[0]} href="" aria-label={Constants.ConfigurationHeading} onClick={() => this.onSelectingTab(0)}>
                                                 <img className="tab-image" alt="" src={oneIcon} />

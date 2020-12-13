@@ -42,13 +42,13 @@ class OrgPermissions extends React.Component<IOrgPermissionsProps> {
         let accessLevel: any = [];
         organizationPermissions.map(organizationPermission => {
             accessLevel = [];
-            organizationPermission.accessLevel.map(access => {
+            organizationPermission.accessLevel.map((access, index) => {
                 let hidden = true;
                 if (access === this.props.onBoardingTemplateObject.orgPermissions[organizationPermission.id]) {
                     hidden = false;
                 }
                 accessLevel.push(
-                    <SelectMenu.Item key={organizationPermission.text + "" + access} onClick={() => this.onAccessLevelClick(organizationPermission.id, access)}>
+                    <SelectMenu.Item style={{ 'height': '24px', 'padding': '0px' }} key={organizationPermission.text + "" + access} id={organizationPermission.id + index} onClick={() => this.onAccessLevelClick(organizationPermission.id, access)}>
                         <div className="input-access">
                             <div className="input-access-tick">
                                 <img aria-label="checked" hidden={hidden} className="tick-img" alt="" src={tick} width="16px" height="16px" />
@@ -63,7 +63,7 @@ class OrgPermissions extends React.Component<IOrgPermissionsProps> {
             orgPerm.push(
                 <div key={organizationPermission.id} className="org-permission-item tableobject">
                     <div className="tableobject-cell-primary">
-                        <div className="text-bold">{organizationPermission.text}
+                        <div>{organizationPermission.text}
                             <a className="link" aria-label="info" href={organizationPermission.link}>
                                 <img className="info-img" alt="" src={icon} width="16px" height="16px" />
                             </a>
@@ -74,13 +74,14 @@ class OrgPermissions extends React.Component<IOrgPermissionsProps> {
                         Access:
                     </div>
                     <div className="tableobject-cell-secondary">
-                        <SelectMenu>
-                            <Button as="summary" className="selectmenu-button" style={{ 'padding': '2px', 'width': '180px', 'border': 'border: 1px solid #8A8886', 'borderRadius': '2px', 'backgroundColor': '#fff' }}>                                <span className="selectmenu-button-text">{this.props.onBoardingTemplateObject.orgPermissions[organizationPermission.id]}</span>
+                        <SelectMenu className="select-menu">
+                            <Button as="summary" className="selectmenu-button" style={{ 'padding': '2px', 'width': '180px', 'border': ' 1px solid #8A8886', 'borderRadius': '2px', 'backgroundColor': '#fff', 'lineHeight': '18px' }}>
+                                <span className="selectmenu-button-text">{this.props.onBoardingTemplateObject.orgPermissions[organizationPermission.id]}</span>
                                 <img className="down-img" alt="" src={down} />
                             </Button>
-                            <SelectMenu.Modal width="212px">
-                                <SelectMenu.Header>
-                                    <span>{Constants.SelectMenuHeading}</span>
+                            <SelectMenu.Modal width="185px">
+                                <SelectMenu.Header style={{ 'padding': '0', 'height': '24px' }}>
+                                    <span className="select-menu-header-text">{Constants.SelectMenuHeading}</span>
                                     <this.AccessLevelCloseButton />
                                 </SelectMenu.Header>
                                 <SelectMenu.List>

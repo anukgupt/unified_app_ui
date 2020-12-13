@@ -3,9 +3,9 @@ import renderer from 'react-test-renderer';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import Mapping from "../../components/installationMapping/Mapping";
-import { fireEvent, render, waitForElement } from '@testing-library/react';
 import "@testing-library/jest-dom/extend-expect"
 import { getTenants } from "../../services/installationMapping/tenantService";
+import { mount } from "enzyme";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -29,11 +29,9 @@ test('getTenants should fetch tenants', async () => {
 });
 
 test('Verify if Save Button is in the document', async () => {
-    // Render the App
-    const { getByText } = render(<Mapping />);
-    var saveTemplateMapping = (ev: any) => jest.fn();
-    const button = getByText('Save');
-    expect(button).toBeInTheDocument();
+    const mappingUI = mount(<Mapping />);
+    const saveButton = mappingUI.find('.bolt-button');
+    expect(saveButton.exists()).toBeTruthy();
 });
 
 

@@ -47,7 +47,7 @@ class UserPermissions extends React.Component<IUserPermissionsProps> {
                     hidden = false;
                 }
                 accessLevel.push(
-                    <SelectMenu.Item key={userPermission.text + " " + access} id={userPermission.id + access + index} href="#" onClick={() => this.onAccessLevelClick(userPermission.id, access)}>
+                    <SelectMenu.Item style={{ 'height': '24px', 'padding': '0px' }} key={userPermission.text + " " + access} id={userPermission.id + index} href="#" onClick={() => this.onAccessLevelClick(userPermission.id, access)}>
                         <div className="input-access">
                             <div className="input-access-tick">
                                 <img aria-label="checked" hidden={hidden} className="tick-img" alt="" src={tick} width="16px" height="16px" />
@@ -62,7 +62,7 @@ class UserPermissions extends React.Component<IUserPermissionsProps> {
             userPerm.push(
                 <div key={userPermission.id} className="user-permission-item tableobject">
                     <div className="tableobject-cell-primary">
-                        <div className="text-bold">{userPermission.text}
+                        <div>{userPermission.text}
                             <a className="link" aria-label="info" href={userPermission.link}>
                                 <img className="info-img" alt="" src={icon} width="16px" height="16px" />
                             </a>
@@ -73,14 +73,14 @@ class UserPermissions extends React.Component<IUserPermissionsProps> {
                         Access:
                     </div>
                     <div className="tableobject-cell-secondary">
-                        <SelectMenu>
-                            <Button as="summary" className="selectmenu-button" style={{ 'padding': '2px', 'width': '180px', 'border': 'border: 1px solid #8A8886', 'borderRadius': '2px', 'backgroundColor': '#fff' }}>
+                        <SelectMenu className="select-menu">
+                            <Button as="summary" className="selectmenu-button" style={{ 'padding': '2px', 'width': '180px', 'border': '1px solid #8A8886', 'borderRadius': '2px', 'backgroundColor': '#fff', 'lineHeight': '18px' }}>
                                 <span className="selectmenu-button-text">{this.props.onBoardingTemplateObject.userPermissions[userPermission.id]}</span>
                                 <img className="down-img" alt="" src={down} />
                             </Button>
-                            <SelectMenu.Modal width="212px">
-                                <SelectMenu.Header>
-                                    <span>{Constants.SelectMenuHeading}</span>
+                            <SelectMenu.Modal width="185px">
+                                <SelectMenu.Header style={{ 'padding': '0', 'height': '24px' }}>
+                                    <span className="select-menu-header-text">{Constants.SelectMenuHeading}</span>
                                     <this.AccessLevelCloseButton />
                                 </SelectMenu.Header>
                                 <SelectMenu.List>

@@ -17,17 +17,17 @@ class Tenants extends React.Component<ITenantsProps> {
     var options = tenants && tenants.value &&
       tenants.value.length > 0 &&
       tenants.value.map(tenant =>
-        <SelectMenu.Item className="formitem-selectmenu-item" onClick={() => {
+        <SelectMenu.Item className="formitem-selectmenu-item" style={{ 'height': '24px', 'padding': '0px' }} onClick={() => {
           this.props.setTenantId(tenant);
         }} key={tenant.tenantId}>
-          {tenant.displayName}
+          <span className="tenant-displayname">{tenant.displayName}</span>
         </SelectMenu.Item>
       )
     return (
       <div className="formitem-tenant">
         <span>{Constants.SelectAzureTenantLabel}</span>
         <SelectMenu className="formitem-dropdown">
-          <Button as="summary" className="formitem-button">
+          <Button as="summary" className="formitem-button" style={{ 'border': '1px solid #8A8886', 'borderRadius': '2px', 'backgroundColor': '#fff', 'padding': '0', 'height': '24px' }}>
             <span className="formitem-button-value">{this.props.mappingStateObject.selectedTenant.name}</span>
             <img className="formitem-dropdown-arrow" alt="" src={down} />
           </Button>

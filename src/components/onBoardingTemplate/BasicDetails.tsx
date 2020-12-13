@@ -12,9 +12,13 @@ interface IBasicDetailsProps {
 
 class BasicDetails extends React.Component<IBasicDetailsProps> {
     render() {
+        var clientIdClassName = "client-id";
+        if (this.props.onBoardingTemplateObject.clientIdError) {
+            var clientIdClassName = "client-id margin-bottom-on-error";
+        }
         return (
             <div className="basic-details">
-                <div className="client-id">
+                <div className={clientIdClassName}>
                     <div className="">
                         <div className="subHead">{Constants.ClientId}</div>
                     </div>
@@ -50,12 +54,6 @@ class BasicDetails extends React.Component<IBasicDetailsProps> {
                                 {Constants.WebhookURLDescription2}
                             </p>
                         </dd>
-                        {/* {
-                            this.props.onBoardingTemplateObject.webhookURLError &&
-                            <dd className="error">
-                                {Constants.WebhookURLError}
-                            </dd>
-                        } */}
                     </dl>
                 </div>
                 <div className="callback-url">
@@ -70,12 +68,6 @@ class BasicDetails extends React.Component<IBasicDetailsProps> {
                             <input className="input-text" type="text" id="callbackURL" value={this.props.onBoardingTemplateObject.callbackURL} onChange={this.props.onCallbackURLChange}></input>
                             <p className="note">{Constants.CallbackURLDescription}</p>
                         </dd>
-                        {/* {
-                            this.props.onBoardingTemplateObject.callbackURLError &&
-                            <dd className="error">
-                                {Constants.CallbackURLError}
-                            </dd>
-                        } */}
                     </dl>
                 </div>
             </div>

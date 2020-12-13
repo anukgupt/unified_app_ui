@@ -2,6 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import BasicDetails from '../../components/onBoardingTemplate/BasicDetails';
 import { onBoardingObject } from "../../components/onBoardingTemplate/OnBoardingTemplate";
+import OnBoardingTemplate from '../../components/onBoardingTemplate/OnBoardingTemplate';
 import { shallow, mount } from "enzyme";
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
@@ -17,13 +18,29 @@ const onBoardingTemplateObject: onBoardingObject = {
     repoPermissions: {},
     orgPermissions: {},
     userPermissions: {},
-    domainList: [],
     showOnBoardingTemplate: true,
-    isUserAuthorized: false
+    isUserAuthorized: false,
+    isTemplateSucessfullySaved: false,
+    selectedTabIndex: 0,
+    isUserAdminFlowInProcess: true
 }
-const onClientIdChange = jest.fn();
-const onWebhookURLChange = jest.fn();
-const onCallbackURLChange = jest.fn();
+
+const onBoardingUI = mount(<OnBoardingTemplate />);
+const onClientIdChange = jest.fn(() => {
+    onBoardingUI.setState({
+        clientId: "test clientid",
+    });
+});
+const onWebhookURLChange = jest.fn(() => {
+    onBoardingUI.setState({
+        webhookURL: "test webhookurl",
+    });
+});
+const onCallbackURLChange = jest.fn(() => {
+    onBoardingUI.setState({
+        callbackURL: "test callbackurl",
+    });
+});
 
 test('renders correctly all components with no errors', () => {
     const basicDetails = renderer.create(<BasicDetails
@@ -32,23 +49,31 @@ test('renders correctly all components with no errors', () => {
 });
 
 test('render input clientid', () => {
-    const wrapper = shallow(<BasicDetails
+    const basicDetails = mount(<BasicDetails
         onBoardingTemplateObject={onBoardingTemplateObject} onClientIdChange={onClientIdChange} onWebhookURLChange={onWebhookURLChange} onCallbackURLChange={onCallbackURLChange} />);
-    wrapper.find('input').at(0).simulate('change', 'test clientid');
-    expect(onClientIdChange).toHaveBeenCalledWith('test clientid');
+    basicDetails.find('input').at(0).simulate('change', 'test clientid');
+    expect(onClientIdChange).toHaveBeenCalledTimes(1);
+    expect(onBoardingUI.state()).toStrictEqual({ "clientId": "test clientid", "currentAuthority": "", "error": null, "isAuthenticated": false, "user": {} });
 });
 
 test('render input webhookurl', () => {
-    let wrapper = shallow(<BasicDetails
+    let basicDetails = mount(<BasicDetails
         onBoardingTemplateObject={onBoardingTemplateObject} onClientIdChange={onClientIdChange} onWebhookURLChange={onWebhookURLChange} onCallbackURLChange={onCallbackURLChange} />);
-    wrapper = wrapper.find('input');
-    wrapper.find('input').at(1).simulate('change', 'test webhookurl');
-    expect(onWebhookURLChange).toHaveBeenCalledWith('test webhookurl');
+    basicDetails.find('input').at(1).simulate('change', 'test webhookurl');
+    expect(onWebhookURLChange).toHaveBeenCalledTimes(1);
+    expect(onBoardingUI.state()).toStrictEqual({ "clientId": "test clientid", "webhookURL": "test webhookurl", "currentAuthority": "", "error": null, "isAuthenticated": false, "user": {} });
 });
 
 test('render input callbackurl', () => {
-    const wrapper = shallow(<BasicDetails
+    const basicDetails = mount(<BasicDetails
         onBoardingTemplateObject={onBoardingTemplateObject} onClientIdChange={onClientIdChange} onWebhookURLChange={onWebhookURLChange} onCallbackURLChange={onCallbackURLChange} />);
-    wrapper.find('input').at(2).simulate('change', 'test callbackurl');
-    expect(onCallbackURLChange).toHaveBeenCalledWith('test callbackurl');
+    basicDetails.find('input').at(2).simulate('change', 'test callbackurl');
+    expect(onCallbackURLChange).toHaveBeenCalledTimes(1);
+    expect(onBoardingUI.state()).toStrictEqual({ "clientId": "test clientid", "webhookURL": "test webhookurl", "callbackURL": "test callbackurl", "currentAuthority": "", "error": null, "isAuthenticated": false, "user": {} });
 });
+
+test('render buttons', () => {
+    expect(onBoardingUI.find('.create-configuration')).toBeTruthy();
+    expect(onBoardingUI.find('.previous-configuration')).toBeTruthy();
+    expect(onBoardingUI.find('.next-configuration')).toBeTruthy();
+})

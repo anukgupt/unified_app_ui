@@ -38,7 +38,6 @@ class RepoPermissions extends React.Component<IRepoPermissionsProps> {
     constructor(props: any) {
         super(props);
         this.initializeRepoPermissions();
-        // const menuContext = React.useContext(SelectMenu.MenuContext);
     }
 
     initializeRepoPermissions() {
@@ -46,7 +45,6 @@ class RepoPermissions extends React.Component<IRepoPermissionsProps> {
         repositoryPermissions.map(repo => {
             onBoardingTemplateObject.repoPermissions[repo.id] = repo.accessLevel[0]
         });
-        onBoardingTemplateObject.domainList = [];
         this.props.setTemplateState(onBoardingTemplateObject);
     }
 
@@ -54,20 +52,19 @@ class RepoPermissions extends React.Component<IRepoPermissionsProps> {
         let repoPerm: any = [];
         let accessLevel: any = [];
         let hidemandatoryLabel: boolean;
-        let domainUI: any = null;
         repositoryPermissions.map(repo => {
             accessLevel = [];
             hidemandatoryLabel = true;
             if (repo.id === Constants.metadataId) {
                 hidemandatoryLabel = this.hidemandatoryLabel
             }
-            repo.accessLevel.map(access => {
+            repo.accessLevel.map((access, index) => {
                 let hidden = true;
                 if (access === this.props.onBoardingTemplateObject.repoPermissions[repo.id]) {
                     hidden = false;
                 }
                 accessLevel.push(
-                    <SelectMenu.Item key={repo.text + " " + access} onClick={() => this.onAccessLevelClick(repo.id, access)}>
+                    <SelectMenu.Item style={{ 'height': '24px', 'padding': '0px' }} key={repo.text + " " + access} id={repo.id + index} onClick={() => this.onAccessLevelClick(repo.id, access)}>
                         <div className="input-access">
                             <div className="input-access-tick">
                                 <img aria-label="checked" hidden={hidden} className="tick-img" alt="" src={tick} width="16px" height="16px" />
@@ -79,36 +76,29 @@ class RepoPermissions extends React.Component<IRepoPermissionsProps> {
                     </SelectMenu.Item>
                 );
             });
-            //Domain UI for Content References repo permissions
-            domainUI = null;
-            if (repo.id === Constants.contentreferencesId &&
-                (this.props.onBoardingTemplateObject.repoPermissions[Constants.contentreferencesId] === Constants.ReadOnlyAccess ||
-                    this.props.onBoardingTemplateObject.repoPermissions[Constants.contentreferencesId] === Constants.ReadWriteAccess)) {
-                domainUI = this.addDomainUI();
-            }
             repoPerm.push(
                 <div key={repo.id} className="repo-permission-item tableobject">
                     <div className="tableobject-cell-primary">
-                        <div className="text-bold">{repo.text}
+                        <div>{repo.text}
                             <a className="link" aria-label="info" href={repo.link}>
                                 <img className="info-img" alt="" src={icon} width="16px" height="16px" />
                             </a>
                         </div>
                         <p className="note">{repo.note}</p>
                     </div>
+                    {<div className="input-mandatory" hidden={hidemandatoryLabel}>{Constants.mandatoryLabel}</div>}
                     <div className="tableobject-cell-intermediate">
                         Access:
                     </div>
-                    {<div className="input-mandatory" hidden={hidemandatoryLabel}>{Constants.mandatoryLabel}</div>}
-                    <div className="tableobject-cell-secondary padding-input-access">
-                        <SelectMenu>
-                            <Button as="summary" className="selectmenu-button" style={{ 'padding': '2px', 'width': '180px', 'border': 'border: 1px solid #8A8886', 'borderRadius': '2px', 'backgroundColor': '#fff' }}>
+                    <div className="tableobject-cell-secondary">
+                        <SelectMenu className="select-menu">
+                            <Button as="summary" className="selectmenu-button" style={{ 'padding': '2px', 'width': '180px', 'border': ' 1px solid #8A8886', 'borderRadius': '2px', 'backgroundColor': '#fff', 'lineHeight': '18px' }}>
                                 <span className="selectmenu-button-text">{this.props.onBoardingTemplateObject.repoPermissions[repo.id]}</span>
                                 <img className="down-img" alt="" src={down} />
                             </Button>
-                            <SelectMenu.Modal width="212px">
-                                <SelectMenu.Header>
-                                    <span>{Constants.SelectMenuHeading}</span>
+                            <SelectMenu.Modal width="185px">
+                                <SelectMenu.Header style={{ 'padding': '0', 'height': '24px' }}>
+                                    <span className="select-menu-header-text">{Constants.SelectMenuHeading}</span>
                                     <this.accessLevelCloseButton />
                                 </SelectMenu.Header>
                                 <SelectMenu.List>
@@ -119,9 +109,6 @@ class RepoPermissions extends React.Component<IRepoPermissionsProps> {
                     </div>
                 </div>
             );
-            repoPerm.push(
-                domainUI
-            );
         });
         return (
             <div className="permissions">
@@ -129,7 +116,6 @@ class RepoPermissions extends React.Component<IRepoPermissionsProps> {
                     {repoPerm}
                 </div>
             </div>
-
         )
     }
 
@@ -151,69 +137,7 @@ class RepoPermissions extends React.Component<IRepoPermissionsProps> {
         if (!this.hidemandatoryLabel) {
             onBoardingTemplateObject.repoPermissions[Constants.metadataId] = Constants.ReadOnlyAccess;
         }
-        if (id === Constants.contentreferencesId &&
-            (this.props.onBoardingTemplateObject.repoPermissions[Constants.contentreferencesId] === Constants.NoAccess)) {
-            onBoardingTemplateObject.domainList.splice(0, onBoardingTemplateObject.domainList.length);
-        }
         this.props.setTemplateState(onBoardingTemplateObject);
-        //document.getElementById(id)?.focus();
-    }
-
-    addDomainUI() {
-        let domainList: string[] = this.props.onBoardingTemplateObject.domainList;
-        let domainUI: any = [];
-        domainList.map((domainName, index) => {
-            domainUI.push(
-                <li className="row-content">
-                    <div className="row-content-data">{domainName}</div>
-                    <button type="button" aria-label="Delete this Domain" className="domain-add-button" onClick={() => this.removeFromDomainList(index)}>
-                        <img className="cross-img" alt="" src={cross} width="10ox" height="10px" />
-                    </button>
-                </li>
-            );
-        });
-        let finalList: any = [];
-        if (domainList.length > 0) {
-            finalList.push(
-                <div className="box-domain-list">
-                    <ul className="domain-list">
-                        {domainUI}
-                    </ul>
-                </div>
-            );
-        }
-        return (
-            <div className="repo-permission-item">
-                <dl>
-                    <dt>
-                        <label htmlFor="domain-repo">{Constants.DomainHeading}</label>
-                    </dt>
-                    <dd>
-                        <input id="domain-repo" className="input-text" type="text"></input>
-                        <button type="button" aria-label="Add Domain" className="" onClick={this.addtoDomainList}>{Constants.Add}</button>
-                        <p className="note">{Constants.DomainDescription}</p>
-                    </dd>
-                </dl>
-                <div>{finalList}</div>
-            </div >
-        )
-    }
-
-    addtoDomainList = () => {
-        let onBoardingTemplateObject = this.props.onBoardingTemplateObject;
-        onBoardingTemplateObject.domainList.push((document.getElementById("domain-repo") as HTMLInputElement).value + "");
-        (document.getElementById("domain-repo") as HTMLInputElement).value = "";
-        this.setState(onBoardingTemplateObject);
-    }
-
-    removeFromDomainList = (index: number, removeAll?: boolean) => {
-        let count = 1;
-        let onBoardingTemplateObject = this.props.onBoardingTemplateObject;
-        if (removeAll) {
-            count = onBoardingTemplateObject.domainList.length;
-        }
-        onBoardingTemplateObject.domainList.splice(index, count);
-        this.setState(onBoardingTemplateObject);
     }
 
     accessLevelCloseButton = () => {

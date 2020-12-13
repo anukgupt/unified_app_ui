@@ -5,139 +5,147 @@ exports[`renders default ui 1`] = `
   className="full-size"
 >
   <div
-    className="background-image"
-    style={
-      Object {
-        "backgroundImage": "url(background.png)",
-      }
-    }
+    className="outer"
   >
     <div
-      className="outer"
+      className="inner"
     >
       <div
-        className="inner"
+        className="heading-container"
+      >
+        <img
+          className="heading-image"
+          src="azurelogo.png"
+        />
+        <span
+          className="heading-text"
+        >
+          Microsoft Azure
+        </span>
+      </div>
+      <div
+        className="heading-app-text"
+      >
+        Setup your Azure info
+      </div>
+      <form
+        className="form-items"
+        onSubmit={[Function]}
       >
         <div
-          className="heading-container"
+          className="formitem-tenant"
         >
-          <img
-            className="heading-image"
-            src="azurelogo.png"
-          />
-          <span
-            className="heading-text"
-          >
-            Microsoft Azure
+          <span>
+            Select your Azure Tenant
           </span>
+          <details
+            className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv formitem-dropdown"
+            onToggle={[Function]}
+            open={false}
+          >
+            <summary
+              className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE formitem-button"
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "border": "1px solid #8A8886",
+                  "borderRadius": "2px",
+                  "height": "24px",
+                  "padding": "0",
+                }
+              }
+            >
+              <span
+                className="formitem-button-value"
+              >
+                
+              </span>
+              <img
+                alt=""
+                className="formitem-dropdown-arrow"
+                src="downarrow.png"
+              />
+            </summary>
+            <div
+              className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+              role="menu"
+            >
+              <div
+                className="SelectMenuModal__Modal-fv9zw3-0 eBmamO"
+                width="370px"
+              >
+                <div
+                  className="SelectMenuList-uflcju-0 erwbXU"
+                />
+              </div>
+            </div>
+          </details>
         </div>
         <div
-          className="heading-app-text"
+          className="formitem-subscription"
         >
-          Setup your Azure info
-        </div>
-        <form
-          className="form-items"
-          onSubmit={[Function]}
-        >
-          <div
-            className="formitem-tenant"
+          <span>
+            Select your Azure Subscription
+          </span>
+          <details
+            className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv formitem-dropdown"
+            onToggle={[Function]}
+            open={false}
           >
-            <span>
-              Select your Azure Tenant
-            </span>
-            <details
-              className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv formitem-dropdown"
-              onToggle={[Function]}
-              open={false}
+            <summary
+              className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE formitem-button"
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "border": "1px solid #8A8886",
+                  "borderRadius": "2px",
+                  "height": "24px",
+                  "padding": "0",
+                }
+              }
             >
-              <summary
-                className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE formitem-button"
+              <span
+                className="formitem-button-value"
               >
-                <span
-                  className="formitem-button-value"
-                >
-                  
-                </span>
-                <img
-                  alt=""
-                  className="formitem-dropdown-arrow"
-                  src="downarrow.png"
-                />
-              </summary>
-              <div
-                className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
-                role="menu"
-              >
-                <div
-                  className="SelectMenuModal__Modal-fv9zw3-0 eBmamO"
-                  width="370px"
-                >
-                  <div
-                    className="SelectMenuList-uflcju-0 erwbXU"
-                  />
-                </div>
-              </div>
-            </details>
-          </div>
-          <div
-            className="formitem-subscription"
-          >
-            <span>
-              Select your Azure Subscription
-            </span>
-            <details
-              className="SelectMenu__StyledSelectMenu-sc-12xd8o8-0 dxFRtv formitem-dropdown"
-              onToggle={[Function]}
-              open={false}
+                Select Subscription
+              </span>
+              <img
+                alt=""
+                className="formitem-dropdown-arrow"
+                src="downarrow.png"
+              />
+            </summary>
+            <div
+              className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
+              role="menu"
             >
-              <summary
-                className="ButtonBase-exshql-0 Button-sc-1cuu878-0 bdhCrA iJXmtE formitem-button"
-              >
-                <span
-                  className="formitem-button-value"
-                >
-                  Select Subscription
-                </span>
-                <img
-                  alt=""
-                  className="formitem-dropdown-arrow"
-                  src="downarrow.png"
-                />
-              </summary>
               <div
-                className="SelectMenuModal__ModalWrapper-fv9zw3-1 dlCqxE"
-                role="menu"
+                className="SelectMenuModal__Modal-fv9zw3-0 eBmamO"
+                width="370px"
               >
-                <div
-                  className="SelectMenuModal__Modal-fv9zw3-0 eBmamO"
-                  width="370px"
+                <form
+                  className="SelectMenuFilter__StyledForm-k2jey9-0 SCYOx"
                 >
-                  <form
-                    className="SelectMenuFilter__StyledForm-k2jey9-0 SCYOx"
+                  <span
+                    className="TextInput__Wrapper-sc-156lfck-1 fUJJVy TextInput-wrapper"
+                    width="100%"
                   >
-                    <span
-                      className="TextInput__Wrapper-sc-156lfck-1 fUJJVy selectmenu-filter TextInput-wrapper"
-                      height="18px"
-                      width="100%"
-                    >
-                      <input
-                        aria-label="Search for a subscription"
-                        className="TextInput__Input-sc-156lfck-0 cjybCM"
-                        onChange={[Function]}
-                        placeholder="Search for a subscription"
-                        type="text"
-                        value=""
-                      />
-                    </span>
-                  </form>
-                  <div
-                    className="SelectMenuList-uflcju-0 erwbXU"
-                  />
-                </div>
+                    <input
+                      aria-label="Search for a subscription"
+                      className="TextInput__Input-sc-156lfck-0 cjybCM"
+                      onChange={[Function]}
+                      placeholder="Search for a subscription"
+                      type="text"
+                      value=""
+                    />
+                  </span>
+                </form>
+                <div
+                  className="SelectMenuList-uflcju-0 erwbXU"
+                />
               </div>
-            </details>
-          </div>
+            </div>
+          </details>
           <div
             className="subscription-link"
           >
@@ -151,41 +159,41 @@ exports[`renders default ui 1`] = `
               Create subscription
             </a>
           </div>
-          <div
-            className="description-link"
+        </div>
+        <div
+          className="description-link"
+        >
+          Choosing save means that you agree to our
+          <a
+            className="link"
+            href="https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade"
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            Choosing save means that you agree to our
-            <a
-              className="link"
-              href="https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-               
-              Terms of Service
-            </a>
-            , 
-            <a
-              className="link bolt-link"
-              href="https://go.microsoft.com/fwlink/?LinkID=264782"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Privacy Statement
-            </a>
-             and 
-            <a
-              className="link bolt-link"
-              href="https://aka.ms/vstscodeofconduct"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Code of Conduct
-            </a>
-            .
-          </div>
-        </form>
-      </div>
+             
+            Terms of Service
+          </a>
+          , 
+          <a
+            className="link bolt-link"
+            href="https://go.microsoft.com/fwlink/?LinkID=264782"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Privacy Statement
+          </a>
+           and 
+          <a
+            className="link bolt-link"
+            href="https://aka.ms/vstscodeofconduct"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Code of Conduct
+          </a>
+          .
+        </div>
+      </form>
       <div
         className="save-button text-right"
       >

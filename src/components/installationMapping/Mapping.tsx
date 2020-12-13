@@ -9,8 +9,7 @@ import * as Constants from '../../Constants';
 import Subscriptions, { ISubscriptionProps } from './Subscriptions';
 import { msalConfig, basicURLS } from '../../config/Config';
 import { getTenants } from '../../services/installationMapping/tenantService';
-import background from '../../images/background.png';
-import greentick_checkmark from '../../images/greentick_checkmark.png';
+import successRest from '../../images/successRest.png';
 import redcross from '../../images/redcross.png';
 
 export interface MappingStateObject {
@@ -171,7 +170,6 @@ class Mapping extends React.Component<any, MappingState> {
     }
 
     render() {
-        const backgourndImageUrl = `url(${background})`;
         let tenantProps: ITenantsProps = {
             mappingStateObject: this.state.mappingStateObject,
             setTenantId: this.setSelectedTenant.bind(this)
@@ -189,12 +187,6 @@ class Mapping extends React.Component<any, MappingState> {
         };
         return (
             <div className="full-size">
-                <div
-                    className="background-image"
-                    style={backgourndImageUrl ? {
-                        backgroundImage: backgourndImageUrl
-                    } : undefined}
-                >
                     <div className="outer">
                         <div className="inner">
                             <div className="heading-container">
@@ -207,7 +199,7 @@ class Mapping extends React.Component<any, MappingState> {
                             {
                                 this.state.mappingStateObject.successMessage != "" &&
                                 <div className="successMessage">
-                                    <img className="success-img" src={greentick_checkmark} width="20px" height="20px" />
+                                    <img className="success-img" src={successRest} width="20px" height="20px" />
                                     <span className="success-msg">{this.state.mappingStateObject.successMessage}</span>
                                 </div>
                             }
@@ -234,9 +226,6 @@ class Mapping extends React.Component<any, MappingState> {
                             >
                                 <Tenants {...tenantProps} />
                                 <Subscriptions {...subscriptionProps}></Subscriptions>
-                                <div className="subscription-link">
-                                    <a className="link" href={Constants.CreateSubscriptionLink} rel="noopener noreferrer" target="_blank"> {Constants.CreateSubscription}</a>
-                                </div>
                                 <div className="description-link">
                                     {Constants.GithubAppDescription1}
                                     <a className="link" href={Constants.TermsOfServiceLink} rel="noopener noreferrer" target="_blank"> {Constants.TermsOfService}</a>, <a className="link bolt-link" href={Constants.PrivacyStatementLink} rel="noopener noreferrer" target="_blank">{Constants.PrivacyStatement}</a> and <a className="link bolt-link" href={Constants.CodeOfConductLink} rel="noopener noreferrer" target="_blank">
@@ -244,29 +233,27 @@ class Mapping extends React.Component<any, MappingState> {
                                     </a>.
                                 </div>
                             </form>
+                            {
+                                this.state.mappingStateObject.loading ?
+                                    <ClipLoader
+                                        css={
+                                            `display: block; float: right; margin-bottom: 30px; margin-right: 49px;`
+                                        }
+                                        size={40}
+                                        loading={this.state.mappingStateObject.loading}
+                                    ></ClipLoader> :
+                                    <div className="save-button text-right">
+                                        <button aria-disabled="false" className="bolt-button" data-focuszone="" data-is-focusable="true" type="submit" onClick={(ev) => {
+                                            ev.preventDefault();
+                                            this.saveInstallationMapping();
+                                        }}>
+                                            <span className="bolt-button-text">{Constants.SaveButtonText}</span>
+                                        </button>
+                                    </div>
+                            }
                         </div>
-
-                        {
-                            this.state.mappingStateObject.loading ?
-                                <ClipLoader
-                                    css={
-                                        `display: block; float: right; margin-bottom: 30px; margin-right: 49px;`
-                                    }
-                                    size={40}
-                                    loading={this.state.mappingStateObject.loading}
-                                ></ClipLoader> :
-                                <div className="save-button text-right">
-                                    <button aria-disabled="false" className="bolt-button" data-focuszone="" data-is-focusable="true" type="submit" onClick={(ev) => {
-                                        ev.preventDefault();
-                                        this.saveInstallationMapping();
-                                    }}>
-                                        <span className="bolt-button-text">{Constants.SaveButtonText}</span>
-                                    </button>
-                                </div>
-                        }
                     </div>
                 </div>
-            </div>
         )
     }
 }
