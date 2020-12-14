@@ -2,7 +2,7 @@
 export const msalConfig = {
     appId: '86570ef4-5443-4de9-bb47-1542755d3565',
     authority: 'https://login.microsoftonline.com/',
-    // redirectUri: 'http://localhost:3000/',
+    // redirectUri: 'http://localhost:3000/' ,
     redirectUri: 'https://unifiedappui.azurewebsites.net',
     scopes: ["User.Read"],
     azureScopes: [
