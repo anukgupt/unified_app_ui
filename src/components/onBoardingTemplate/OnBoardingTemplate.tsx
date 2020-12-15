@@ -66,9 +66,9 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
     async initialize() {
         let onBoardingTemplateObject = this.state.onBoardingTemplateObject;
         try {
-            this.accessToken = await this.props.login('');
-            onBoardingTemplateObject.isUserAuthorized = this.props.isAuthenticated;
-            onBoardingTemplateObject.isUserAdminFlowInProcess = false;
+            // this.accessToken = await this.props.login('');
+            // onBoardingTemplateObject.isUserAuthorized = this.props.isAuthenticated;
+            onBoardingTemplateObject.isUserAdminFlowInProcess = true;
             this.setTemplateState(onBoardingTemplateObject);
         }
         catch (error) {
