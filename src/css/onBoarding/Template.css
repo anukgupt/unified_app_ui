@@ -1,6 +1,15 @@
+@font-face
+{
+font-family: segoeFont;
+src: url('../fontFiles/segoeui.ttf'),
+     url('../fontFiles/segoeuib.ttf'),
+     url('../fontFiles//segoeuil.ttf'),
+     url('../fontFiles/segoeuisl.ttf'),
+     url('../fontFiles//seguisb.ttf')
+}
 .container-1 {
     color: #000000;
-    font-family: 'Segoe UI';
+    font-family: 'segoeFont';
     background: #FFFFFF;
 }
 .onboarding-template {

@@ -127,8 +127,8 @@ exports[`renders default ui 1`] = `
                   className="SelectMenuFilter__StyledForm-k2jey9-0 SCYOx"
                 >
                   <span
-                    className="TextInput__Wrapper-sc-156lfck-1 fUJJVy TextInput-wrapper"
-                    width="100%"
+                    className="TextInput__Wrapper-sc-156lfck-1 kjwShp TextInput-wrapper"
+                    width="355px"
                   >
                     <input
                       aria-label="Search for a subscription"
