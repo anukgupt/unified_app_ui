@@ -98,7 +98,7 @@ class UserPermissions extends React.Component<IUserPermissionsProps> {
                     <div className="user-permissions-description">
                         <p>
                             {Constants.UserPermissionDescription1}
-                            <a href={Constants.UserPermissionDescriptionLink}>{Constants.UserPermissionDescriptionForLink}</a>
+                            <a target="_blank" href={Constants.UserPermissionDescriptionLink}>{Constants.UserPermissionDescriptionForLink}</a>
                             {Constants.UserPermissionDescription2}
                         </p>
                     </div>

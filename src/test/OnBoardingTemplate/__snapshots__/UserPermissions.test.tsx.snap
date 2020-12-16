@@ -15,6 +15,7 @@ exports[`renders user permissions with default values 1`] = `
         These permissions are granted on an individual user basis as part of the 
         <a
           href="https://docs.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#identifying-and-authorizing-users-for-github-apps"
+          target="_blank"
         >
           User authorization flow
         </a>

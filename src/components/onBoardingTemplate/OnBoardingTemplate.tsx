@@ -69,7 +69,7 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
             // this.accessToken = await this.props.login('');
             // onBoardingTemplateObject.isUserAuthorized = this.props.isAuthenticated;
             onBoardingTemplateObject.isUserAuthorized = true;
-            onBoardingTemplateObject.isUserAdminFlowInProcess = true;
+            onBoardingTemplateObject.isUserAdminFlowInProcess = false;
             this.setTemplateState(onBoardingTemplateObject);
         }
         catch (error) {
@@ -96,69 +96,76 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
                 {
                     <div className="container-1">
                         <div className="onboarding-template">
+                            <div className="microsoft-azure">
+                                <span className="microsoft-azure-heading">{Constants.MicrosoftAzureHeading}</span>
+                            </div>
                             <div className="onboarding-heading">
                                 <div className="onboarding-heading-text">{Constants.OnBoardingHeading}</div>
                                 <div className="onboarding-heading-create">{Constants.CreateHeading}</div>
                             </div>
                             {
                                 this.state.onBoardingTemplateObject.isUserAuthorized &&
-                                <form className="onboarding-form" id="onboarding-template" action="">
-                                    <Tabs selectedIndex={this.state.onBoardingTemplateObject.selectedTabIndex} onSelect={() => { }}>
-                                        <TabList className="tab-list">
-                                            <Tab className={tabs[0]} href="" aria-label={Constants.ConfigurationHeading} onClick={() => this.onSelectingTab(0)}>
-                                                <img className="tab-image" alt="" src={oneIcon} />
-                                                <span className="tab-text">{Constants.ConfigurationHeading}</span>
-                                            </Tab>
-                                            <Tab className={tabs[1]} href="" aria-label={Constants.RepoPermissionsHeading} onClick={() => this.onSelectingTab(1)}>
-                                                <img className="tab-image" alt="" src={twoIcon} />
-                                                <span> {Constants.RepoPermissionsHeading}</span>
-                                            </Tab>
-                                            <Tab className={tabs[2]} href="" aria-label={Constants.OrgPermissionsHeading} onClick={() => this.onSelectingTab(2)}>
-                                                <img className="tab-image" alt="" src={threeIcon} />
-                                                <span> {Constants.OrgPermissionsHeading}</span>
-                                            </Tab>
-                                            <Tab className={tabs[3]} href="" aria-label={Constants.UserPermissionsHeading} onClick={() => this.onSelectingTab(3)}>
-                                                <img className="tab-image" alt="" src={fourIcon} />
-                                                <span> {Constants.UserPermissionsHeading}</span>
-                                            </Tab>
-                                        </TabList>
-                                        <TabPanel><BasicDetails onBoardingTemplateObject={this.state.onBoardingTemplateObject} onClientIdChange={this.onClientIdChange} onWebhookURLChange={this.onWebhookURLChange} onCallbackURLChange={this.onCallbackURLChange} /></TabPanel>
-                                        <TabPanel><RepoPermissions setTemplateState={this.setTemplateState} onBoardingTemplateObject={this.state.onBoardingTemplateObject} /></TabPanel>
-                                        <TabPanel><OrgPermissions setTemplateState={this.setTemplateState} onBoardingTemplateObject={this.state.onBoardingTemplateObject} /></TabPanel>
-                                        <TabPanel><UserPermissions setTemplateState={this.setTemplateState} onBoardingTemplateObject={this.state.onBoardingTemplateObject} /></TabPanel>
-                                    </Tabs>
-                                    {
-                                        this.state.onBoardingTemplateObject.isUserAuthorized && this.state.onBoardingTemplateObject.isTemplateSucessfullySaved && this.state.onBoardingTemplateObject.selectedTabIndex == -1 &&
-                                        < div className="template-saved">
-                                            <img className="template-saved-image" alt="" src={successRest} />
-                                            <div className="template-saved-message">
-                                                <span>{Constants.TemplateSuccessfullySavedMessage}</span>
-                                                <span><a className="template-saved-link" href={Constants.TemplateSuccessfullySavedLink}>{Constants.TemplateSuccessfullySavedLinkText}</a></span>
-                                                <span>.</span>
+                                <form id="onboarding-template" action="">
+                                    <div className="onboarding-form">
+                                        <Tabs selectedIndex={this.state.onBoardingTemplateObject.selectedTabIndex} onSelect={() => { }}>
+                                            <TabList className="tab-list">
+                                                <Tab className={tabs[0]} href="" aria-label={Constants.ConfigurationHeading} onClick={() => this.onSelectingTab(0)}>
+                                                    <img className="tab-image" alt="" src={oneIcon} />
+                                                    <span className="tab-text">{Constants.ConfigurationHeading}</span>
+                                                </Tab>
+                                                <Tab className={tabs[1]} href="" aria-label={Constants.RepoPermissionsHeading} onClick={() => this.onSelectingTab(1)}>
+                                                    <img className="tab-image" alt="" src={twoIcon} />
+                                                    <span> {Constants.RepoPermissionsHeading}</span>
+                                                </Tab>
+                                                <Tab className={tabs[2]} href="" aria-label={Constants.OrgPermissionsHeading} onClick={() => this.onSelectingTab(2)}>
+                                                    <img className="tab-image" alt="" src={threeIcon} />
+                                                    <span> {Constants.OrgPermissionsHeading}</span>
+                                                </Tab>
+                                                <Tab className={tabs[3]} href="" aria-label={Constants.UserPermissionsHeading} onClick={() => this.onSelectingTab(3)}>
+                                                    <img className="tab-image" alt="" src={fourIcon} />
+                                                    <span> {Constants.UserPermissionsHeading}</span>
+                                                </Tab>
+                                            </TabList>
+                                            <TabPanel><BasicDetails onBoardingTemplateObject={this.state.onBoardingTemplateObject} onClientIdChange={this.onClientIdChange} onWebhookURLChange={this.onWebhookURLChange} onCallbackURLChange={this.onCallbackURLChange} /></TabPanel>
+                                            <TabPanel><RepoPermissions setTemplateState={this.setTemplateState} onBoardingTemplateObject={this.state.onBoardingTemplateObject} /></TabPanel>
+                                            <TabPanel><OrgPermissions setTemplateState={this.setTemplateState} onBoardingTemplateObject={this.state.onBoardingTemplateObject} /></TabPanel>
+                                            <TabPanel><UserPermissions setTemplateState={this.setTemplateState} onBoardingTemplateObject={this.state.onBoardingTemplateObject} /></TabPanel>
+                                        </Tabs>
+                                        {
+                                            this.state.onBoardingTemplateObject.isUserAuthorized && this.state.onBoardingTemplateObject.isTemplateSucessfullySaved && this.state.onBoardingTemplateObject.selectedTabIndex == -1 &&
+                                            < div className="template-saved">
+                                                <img className="template-saved-image" alt="" src={successRest} />
+                                                <div className="template-saved-message">
+                                                    <span>{Constants.TemplateSuccessfullySavedMessage}</span>
+                                                    <span><a className="template-saved-link" href={Constants.TemplateSuccessfullySavedLink}>{Constants.TemplateSuccessfullySavedLinkText}</a></span>
+                                                    <span>.</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    }
-                                    {
-                                        this.state.onBoardingTemplateObject.isUserAuthorized && !this.state.onBoardingTemplateObject.isTemplateSucessfullySaved && this.state.onBoardingTemplateObject.selectedTabIndex == -1 &&
-                                        < div className="template-not-saved">
-                                            <img className="template-not-saved-image" alt="" src={error} />
-                                            <div className="template-not-saved-message">
-                                                <span>{Constants.TemplateNotSavedMessage}</span>
+                                        }
+                                        {
+                                            this.state.onBoardingTemplateObject.isUserAuthorized && !this.state.onBoardingTemplateObject.isTemplateSucessfullySaved && this.state.onBoardingTemplateObject.selectedTabIndex == -1 &&
+                                            < div className="template-not-saved">
+                                                <img className="template-not-saved-image" alt="" src={error} />
+                                                <div className="template-not-saved-message">
+                                                    <span>{Constants.TemplateNotSavedMessage}</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    }
+                                        }
+                                    </div>
                                     <div className={buttonClassName}>
-                                        <button type="button" className="create-configuration" aria-label={Constants.CreateOnboardingTemplateButton} onClick={this.submitTemplate}>
-                                            <span className="create-configuration-text">{Constants.CreateOnboardingTemplateButton}</span>
-                                        </button>
-                                        <button type="button" className="previous-button" aria-label={Constants.PreviousButton} onClick={this.onPreviousButtonClick}>
-                                            <img className="button-image-prev" alt="" src={lessthan} />
-                                            <span>{Constants.PreviousButton}</span>
-                                        </button>
-                                        <button type="button" className="next-button" aria-label={Constants.NextButton} onClick={this.onNextButtonClick}>
-                                            <span>{Constants.NextButton}</span>
-                                            <img className="button-image-next" alt="" src={greaterthan} />
-                                        </button>
+                                        <div className="all-buttons">
+                                            <button type="button" className="create-configuration" aria-label={Constants.CreateOnboardingTemplateButton} onClick={this.submitTemplate}>
+                                                <span className="create-configuration-text">{Constants.CreateOnboardingTemplateButton}</span>
+                                            </button>
+                                            <button type="button" className="previous-button" aria-label={Constants.PreviousButton} onClick={this.onPreviousButtonClick}>
+                                                <img className="button-image-prev" alt="" src={lessthan} />
+                                                <span>{Constants.PreviousButton}</span>
+                                            </button>
+                                            <button type="button" className="next-button" aria-label={Constants.NextButton} onClick={this.onNextButtonClick}>
+                                                <span>{Constants.NextButton}</span>
+                                                <img className="button-image-next" alt="" src={greaterthan} />
+                                            </button>
+                                        </div>
                                     </div>
                                 </form>
                             }

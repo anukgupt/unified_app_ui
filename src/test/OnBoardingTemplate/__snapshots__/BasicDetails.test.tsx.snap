@@ -76,6 +76,7 @@ exports[`renders correctly all components with no errors 1`] = `
           Events will POST to this URL. Read our 
           <a
             href="https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/about-webhooks"
+            target="_blank"
           >
             webhook documentation
           </a>

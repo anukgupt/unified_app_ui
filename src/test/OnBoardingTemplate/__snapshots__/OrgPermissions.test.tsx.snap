@@ -20,6 +20,7 @@ exports[`renders org permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-members"
+            target="_blank"
           >
             <img
               alt=""
@@ -306,6 +307,7 @@ exports[`renders org permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-organization-administration"
+            target="_blank"
           >
             <img
               alt=""
@@ -592,6 +594,7 @@ exports[`renders org permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-organization-hooks"
+            target="_blank"
           >
             <img
               alt=""
@@ -878,6 +881,7 @@ exports[`renders org permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/"
+            target="_blank"
           >
             <img
               alt=""
@@ -1107,6 +1111,7 @@ exports[`renders org permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-organization-projects"
+            target="_blank"
           >
             <img
               alt=""
@@ -1450,6 +1455,7 @@ exports[`renders org permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/"
+            target="_blank"
           >
             <img
               alt=""
@@ -1736,6 +1742,7 @@ exports[`renders org permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/"
+            target="_blank"
           >
             <img
               alt=""
@@ -2022,6 +2029,7 @@ exports[`renders org permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-organization-user-blocking"
+            target="_blank"
           >
             <img
               alt=""
@@ -2308,6 +2316,7 @@ exports[`renders org permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-team-discussions"
+            target="_blank"
           >
             <img
               alt=""

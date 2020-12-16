@@ -7,10 +7,66 @@ src: url('../fontFiles/segoeui.ttf'),
      url('../fontFiles/segoeuisl.ttf'),
      url('../fontFiles//seguisb.ttf')
 }
+
+@font-face
+{
+font-family: segoeFont;
+src: url('../fontFiles/segoeui.eot'),
+     url('../fontFiles/segoeuib.eot'),
+     url('../fontFiles//segoeuil.eot'),
+     url('../fontFiles/segoeuisl.eot'),
+     url('../fontFiles//seguisb.eot')
+}
+
+@font-face
+{
+font-family: segoeFont;
+src: url('../fontFiles/segoeui.svg'),
+     url('../fontFiles/segoeuib.svg'),
+     url('../fontFiles//segoeuil.svg'),
+     url('../fontFiles/segoeuisl.svg'),
+     url('../fontFiles//seguisb.svg')
+}
+
+@font-face
+{
+font-family: segoeFont;
+src: url('../fontFiles/segoeui.woff'),
+     url('../fontFiles/segoeuib.woff'),
+     url('../fontFiles//segoeuil.woff'),
+     url('../fontFiles/segoeuisl.woff'),
+     url('../fontFiles//seguisb.woff')
+}
+
+@font-face
+{
+font-family: segoeFont;
+src: url('../fontFiles/segoeui.woff2'),
+     url('../fontFiles/segoeuib.woff2'),
+     url('../fontFiles//segoeuil.woff2'),
+     url('../fontFiles/segoeuisl.woff2'),
+     url('../fontFiles//seguisb.woff2')
+}
 .container-1 {
     color: #000000;
     font-family: 'segoeFont';
     background: #FFFFFF;
+}
+.microsoft-azure {
+    height: 40px;
+    width: 100%;
+    background: #0078D4;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.28);
+    align-items: center;
+    margin-bottom: 20px;
+}
+.microsoft-azure-heading {
+    font-size: 18px;
+    padding-left: 65px;
+    line-height: 22px;
+    display: flex;
+    color: #FFFFFF;
+    padding-top: 8px;
 }
 .onboarding-template {
     font-size: 14px;
@@ -46,6 +102,7 @@ src: url('../fontFiles/segoeui.ttf'),
 }
 .tab {
     margin-right: 25px;
+    cursor: pointer;
 }
 .underline {
     padding-bottom: 8px;
@@ -139,7 +196,8 @@ dd {
 }
 .selectmenu-button-text {
     float: left;
-    font-size: 13px;
+    padding-left: 5px;
+    font-size: 12px;
     font-weight: 400;
     font-family: 'segoeFont';
 }
@@ -154,11 +212,11 @@ dd {
     padding-top: 5px;
 }
 .select-menu-header-text {
-    font-size: 13px;
+    padding-left: 7px;
+    font-size: 12px;
     font-weight: 400;
     color: #323130;
     vertical-align: middle;
-    padding-left: 2px;
     font-family: 'segoeFont';
 }
 .cross-img-button {
@@ -175,6 +233,7 @@ dd {
     width: 80%;
     color: #323130;
     font-family: 'segoeFont';
+    font-size: 12px;
 }
 .input-mandatory {
     color:#c24e00;
@@ -187,7 +246,7 @@ dd {
     margin-right: 7px;
 }
 .basic-details, .user-permissions, .organization-permissions, .repository-permissions {
-    margin-top: 39px;
+    margin-top: 20px;
 }
 .user-permissions-description {
     font-size: 13px;
@@ -196,12 +255,15 @@ dd {
     width: 777px;
 }
 .buttons {
-    margin-top: 70px;
+    margin-top: 20px;
     border-top: 1px solid;
     border-color: #e1e4e8;
-    display: flex;
     padding-bottom: 10px;
     margin-bottom: 19px;
+}
+.all-buttons {
+    margin-left: 63px;
+    display: flex;
 }
 .buttons-position {
     margin-top: 400px;
@@ -232,6 +294,7 @@ dd {
     border-radius: 2px;
     height: 24px;
     width: 150px;
+    font-size: 13px;
 }
 .button-image-prev, .button-image-next {
     position: relative;

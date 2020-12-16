@@ -50,7 +50,7 @@ class BasicDetails extends React.Component<IBasicDetailsProps> {
                             <input className="input-text" type="text" id="webhookURL" value={this.props.onBoardingTemplateObject.webhookURL} onChange={this.props.onWebhookURLChange}></input>
                             <p className="note">
                                 {Constants.WebhookURLDescription1}
-                                <a href={Constants.WebhookURLLink}>{Constants.WebhookURLDescriptionLink}</a>
+                                <a target="_blank" href={Constants.WebhookURLLink}>{Constants.WebhookURLDescriptionLink}</a>
                                 {Constants.WebhookURLDescription2}
                             </p>
                         </dd>

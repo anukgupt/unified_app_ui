@@ -1,4 +1,4 @@
-export const OnBoardingHeading = "OnBoarding";
+export const OnBoardingHeading = "OnBoarding Client Service";
 export const CreateHeading = "Create";
 export const CreateOnboardingTemplateButton = "Create configuration";
 export const PreviousButton = "Previous";
@@ -65,7 +65,7 @@ export const InstallationMappingSuccessfullMessage = "Your installation mapping 
 export const InstallationMappingErrorMessage = "Your installation mapping is not saved.";
 export const ErrorOnFetchingTenantsMessage = "Error on fetching Tenants";
 export const ErrorOnFetchingSubscriptionsMessage = "Error on fetching Subscriptions";
-export const UserNotAuthorizedMessage = "You dont have valid permissions for onboarding. To know more create configurations and permissions refer to the ";
+export const UserNotAuthorizedMessage = "You dont have valid permissions for onboarding. To know more about create configurations and permissions please mail narula0781@github.com";
 export const UserNotAuthorizedLink = "";
 export const UserNotAuthorizedLinkText = "link here";
 export const TemplateSuccessfullySavedMessage = "You have successfully created configurations.";

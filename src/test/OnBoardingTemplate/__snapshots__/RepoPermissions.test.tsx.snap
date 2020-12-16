@@ -20,6 +20,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/"
+            target="_blank"
           >
             <img
               alt=""
@@ -312,6 +313,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-administration"
+            target="_blank"
           >
             <img
               alt=""
@@ -604,6 +606,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-checks"
+            target="_blank"
           >
             <img
               alt=""
@@ -896,6 +899,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/"
+            target="_blank"
           >
             <img
               alt=""
@@ -1188,6 +1192,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-contents"
+            target="_blank"
           >
             <img
               alt=""
@@ -1480,6 +1485,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-contents"
+            target="_blank"
           >
             <img
               alt=""
@@ -1772,6 +1778,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-issues"
+            target="_blank"
           >
             <img
               alt=""
@@ -2064,6 +2071,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#metadata-permissions"
+            target="_blank"
           >
             <img
               alt=""
@@ -2299,6 +2307,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-packages"
+            target="_blank"
           >
             <img
               alt=""
@@ -2591,6 +2600,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-pages"
+            target="_blank"
           >
             <img
               alt=""
@@ -2883,6 +2893,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-pull-requests"
+            target="_blank"
           >
             <img
               alt=""
@@ -3175,6 +3186,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-repository-hooks"
+            target="_blank"
           >
             <img
               alt=""
@@ -3467,6 +3479,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-repository-projects"
+            target="_blank"
           >
             <img
               alt=""
@@ -3816,6 +3829,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/"
+            target="_blank"
           >
             <img
               alt=""
@@ -4108,6 +4122,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/"
+            target="_blank"
           >
             <img
               alt=""
@@ -4400,6 +4415,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-single-file"
+            target="_blank"
           >
             <img
               alt=""
@@ -4692,6 +4708,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/#permission-on-statuses"
+            target="_blank"
           >
             <img
               alt=""
@@ -4984,6 +5001,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v4/object/repositoryvulnerabilityalert/"
+            target="_blank"
           >
             <img
               alt=""
@@ -5219,6 +5237,7 @@ exports[`renders repo permissions with default values 1`] = `
             aria-label="info"
             className="link"
             href="https://docs.github.com/v3/apps/permissions/"
+            target="_blank"
           >
             <img
               alt=""

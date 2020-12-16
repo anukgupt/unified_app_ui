@@ -80,7 +80,7 @@ class RepoPermissions extends React.Component<IRepoPermissionsProps> {
                 <div key={repo.id} className="repo-permission-item tableobject">
                     <div className="tableobject-cell-primary">
                         <div>{repo.text}
-                            <a className="link" aria-label="info" href={repo.link}>
+                            <a target="_blank" className="link" aria-label="info" href={repo.link}>
                                 <img className="info-img" alt="" src={icon} width="16px" height="16px" />
                             </a>
                         </div>

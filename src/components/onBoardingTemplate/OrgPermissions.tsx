@@ -64,7 +64,7 @@ class OrgPermissions extends React.Component<IOrgPermissionsProps> {
                 <div key={organizationPermission.id} className="org-permission-item tableobject">
                     <div className="tableobject-cell-primary">
                         <div>{organizationPermission.text}
-                            <a className="link" aria-label="info" href={organizationPermission.link}>
+                            <a target="_blank" className="link" aria-label="info" href={organizationPermission.link}>
                                 <img className="info-img" alt="" src={icon} width="16px" height="16px" />
                             </a>
                         </div>
