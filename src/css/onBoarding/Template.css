@@ -93,6 +93,7 @@ dd {
     border-radius: 2px;
     height: 24px;
     outline: none;
+    font-family: 'segoeFont';
 }
 .input-text:focus {
     background-color: #fff;
@@ -103,9 +104,9 @@ dd {
     font-size: 13px;
     line-height: 18px;
     margin: 0px 0 2px;
-    font: small-caption;
     color: #605E5C;
     white-space: break-spaces;
+    font-family: 'segoeFont';
 }
 .repo-permission-item, .org-permission-item, .user-permission-item {
     padding-bottom: 12px!important;
@@ -140,6 +141,7 @@ dd {
     float: left;
     font-size: 13px;
     font-weight: 400;
+    font-family: 'segoeFont';
 }
 .info-img {
     vertical-align: text-bottom;
@@ -157,6 +159,7 @@ dd {
     color: #323130;
     vertical-align: middle;
     padding-left: 2px;
+    font-family: 'segoeFont';
 }
 .cross-img-button {
     border: none;
@@ -171,6 +174,7 @@ dd {
 .input-access-text{
     width: 80%;
     color: #323130;
+    font-family: 'segoeFont';
 }
 .input-mandatory {
     color:#c24e00;

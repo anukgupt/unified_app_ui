@@ -8,6 +8,46 @@ src: url('../fontFiles/segoeui.ttf'),
      url('../fontFiles//seguisb.ttf')
 }
 
+@font-face
+{
+font-family: segoeFont;
+src: url('../fontFiles/segoeui.eot'),
+     url('../fontFiles/segoeuib.eot'),
+     url('../fontFiles//segoeuil.eot'),
+     url('../fontFiles/segoeuisl.eot'),
+     url('../fontFiles//seguisb.eot')
+}
+
+@font-face
+{
+font-family: segoeFont;
+src: url('../fontFiles/segoeui.svg'),
+     url('../fontFiles/segoeuib.svg'),
+     url('../fontFiles//segoeuil.svg'),
+     url('../fontFiles/segoeuisl.svg'),
+     url('../fontFiles//seguisb.svg')
+}
+
+@font-face
+{
+font-family: segoeFont;
+src: url('../fontFiles/segoeui.woff'),
+     url('../fontFiles/segoeuib.woff'),
+     url('../fontFiles//segoeuil.woff'),
+     url('../fontFiles/segoeuisl.woff'),
+     url('../fontFiles//seguisb.woff')
+}
+
+@font-face
+{
+font-family: segoeFont;
+src: url('../fontFiles/segoeui.woff2'),
+     url('../fontFiles/segoeuib.woff2'),
+     url('../fontFiles//segoeuil.woff2'),
+     url('../fontFiles/segoeuisl.woff2'),
+     url('../fontFiles//seguisb.woff2')
+}
+
 html, body{
     padding: 0;
     margin: 0;
@@ -44,7 +84,6 @@ body {
 .heading-container {
     display: flex;
     align-items: center;
-    font-family: 'segoeFont';
 }
 .heading-image {
     width: 36px;
@@ -86,6 +125,7 @@ body {
     font-size: 13px;
     color: rgba(0, 0, 0, 0.9);
     margin-left: 5px;
+    font-family: 'segoeFont';
 }
 .formitem-dropdown-arrow {
     float: right;
@@ -97,16 +137,24 @@ body {
 .tenant-displayname {
     font-size: 13px;
     color: rgba(0, 0, 0, 0.9);
+    font-family: 'segoeFont';
 }
 .formitem-subscription {
     font-size: 14px;
     margin-top: 30px;
+}
+.select-menu-filter {
+    font-family: 'segoeFont';
+}
+.select-menu-header {
+    font-family: 'segoeFont';
 }
 .input-checkbox-label {
     font-size: 13px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.9);
     font-weight: 400;
+    font-family: 'segoeFont';
 }
 .input-checkbox {
     width: 16px;
@@ -148,7 +196,8 @@ body {
     float: right;
     font-size: 13px;
     font-weight: 400;
-    color: #0078D4; 
+    color: #0078D4;
+    font-family: 'segoeFont';
 }
 .link {
     color: #005a9e;

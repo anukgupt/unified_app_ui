@@ -137,15 +137,15 @@ export class Subscription extends React.Component<ISubscriptionProps, Subscripti
           {
             showSubscriptionFilter &&
             <SelectMenu.Modal width="370px">
-              <SelectMenu.Filter style={{ 'marginTop': '4px' }} padding="0" width="355px" onChange={(event: any) => { this.onFilteringSubscription(event.target.value) }} placeholder={Constants.DropdownFilterAriaLabel} value={this.state.subscriptionParameters.searchValueForSubscriptions} aria-label={Constants.DropdownFilterAriaLabel} />
-              <SelectMenu.Header style={{ 'height': '24px', 'padding': '0 0 5px 9px', 'alignItems': 'center' }}>{Constants.AllSubscriptionsRadioButtonValue}</SelectMenu.Header>
+              <SelectMenu.Filter className="select-menu-filter" style={{ 'marginTop': '4px' }} padding="0" width="355px" onChange={(event: any) => { this.onFilteringSubscription(event.target.value) }} placeholder={Constants.DropdownFilterAriaLabel} value={this.state.subscriptionParameters.searchValueForSubscriptions} aria-label={Constants.DropdownFilterAriaLabel} />
+              <SelectMenu.Header className="select-menu-header" style={{ 'height': '24px', 'padding': '0 0 5px 9px', 'alignItems': 'center' }}>{Constants.AllSubscriptionsRadioButtonValue}</SelectMenu.Header>
               <SelectMenu.List style={{ 'overflow': 'initial' }}>
                 <SelectMenu.Item style={style} key={Constants.AllSubscriptionsRadioButtonValue} className="formitem-selectmenu-item">
                   <input id="input-checkbox-all" className="input-checkbox" type="checkbox" checked={this.state.subscriptionParameters.subscriptionRadioButtonValue == Constants.AllSubscriptionsRadioButtonValue} onClick={() => this.onAllSubscriptionsCheckBox()} value={Constants.AllSubscriptionsRadioButtonNote} />
                   <label htmlFor="input-checkbox-all" className="input-checkbox-label">{Constants.AllSubscriptionsRadioButtonNote}</label>
                 </SelectMenu.Item>
               </SelectMenu.List>
-              <SelectMenu.Header style={{ 'height': '24px', 'padding': '8px 0 5px 9px', 'alignItems': 'center' }}>{Constants.SelectSubscriptionsRadioButtonValue}</SelectMenu.Header>
+              <SelectMenu.Header className="select-menu-header" style={{ 'height': '24px', 'padding': '8px 0 5px 9px', 'alignItems': 'center' }}>{Constants.SelectSubscriptionsRadioButtonValue}</SelectMenu.Header>
               <SelectMenu.List style={{ 'overflow': 'initial' }}>
                 {
                   options
