@@ -16,6 +16,7 @@ import successRest from "../../images/successRest.png";
 import lessthan from "../../images/lessthan.png";
 import greaterthan from "../../images/greaterthan.png";
 import { Tabs, TabPanel, Tab, TabList } from 'react-tabs';
+import ClipLoader from "react-spinners/ClipLoader";
 
 export interface onBoardingObject {
     clientId: string;
@@ -79,7 +80,7 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
     }
 
     render(): React.ReactNode {
-        let buttonClassName = "buttons"
+        let buttonClassName = "buttons";
         if (this.state.onBoardingTemplateObject.isUserAuthorized && this.state.onBoardingTemplateObject.selectedTabIndex == -1) {
             buttonClassName = "buttons buttons-position";
         }
@@ -90,10 +91,17 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
         let tabs: any[] = [];
         tabs[0] = tabs[1] = tabs[2] = tabs[3] = "tab";
         tabs[this.state.onBoardingTemplateObject.selectedTabIndex] = "tab underline";
+        var isPrevButtonDisabled = true, isNextButtonDisabled = true;
+        if (this.state.onBoardingTemplateObject.selectedTabIndex >= 1 && this.state.onBoardingTemplateObject.selectedTabIndex <= 3) {
+            isPrevButtonDisabled = false;
+        }
+        if (this.state.onBoardingTemplateObject.selectedTabIndex >= 0 && this.state.onBoardingTemplateObject.selectedTabIndex <= 2) {
+            isNextButtonDisabled = false;
+        }
         return (
-            !this.state.onBoardingTemplateObject.isUserAdminFlowInProcess &&
             <div className="main">
                 {
+                    !this.state.onBoardingTemplateObject.isUserAdminFlowInProcess &&
                     <div className="container-1">
                         <div className="onboarding-template">
                             <div className="microsoft-azure">
@@ -101,7 +109,6 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
                             </div>
                             <div className="onboarding-heading">
                                 <div className="onboarding-heading-text">{Constants.OnBoardingHeading}</div>
-                                <div className="onboarding-heading-create">{Constants.CreateHeading}</div>
                             </div>
                             {
                                 this.state.onBoardingTemplateObject.isUserAuthorized &&
@@ -157,13 +164,11 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
                                             <button type="button" className="create-configuration" aria-label={Constants.CreateOnboardingTemplateButton} onClick={this.submitTemplate}>
                                                 <span className="create-configuration-text">{Constants.CreateOnboardingTemplateButton}</span>
                                             </button>
-                                            <button type="button" className="previous-button" aria-label={Constants.PreviousButton} onClick={this.onPreviousButtonClick}>
-                                                <img className="button-image-prev" alt="" src={lessthan} />
+                                            <button type="button" className="previous-button" aria-label={Constants.PreviousButton} onClick={this.onPreviousButtonClick} disabled={isPrevButtonDisabled}>
                                                 <span>{Constants.PreviousButton}</span>
                                             </button>
-                                            <button type="button" className="next-button" aria-label={Constants.NextButton} onClick={this.onNextButtonClick}>
+                                            <button type="button" className="next-button" aria-label={Constants.NextButton} onClick={this.onNextButtonClick} disabled={isNextButtonDisabled}>
                                                 <span>{Constants.NextButton}</span>
-                                                <img className="button-image-next" alt="" src={greaterthan} />
                                             </button>
                                         </div>
                                     </div>
@@ -182,6 +187,16 @@ class OnBoardingTemplate extends React.Component<any, ITemplateState> {
                             }
                         </div>
                     </div >
+                }
+                {
+                    this.state.onBoardingTemplateObject.isUserAdminFlowInProcess &&
+                    <ClipLoader
+                        css={
+                            `display: block; margin: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);`
+                        }
+                        size={100}
+                        loading={this.state.onBoardingTemplateObject.isUserAdminFlowInProcess}
+                    ></ClipLoader>
                 }
             </div >
         )

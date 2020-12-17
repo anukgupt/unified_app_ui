@@ -19,9 +19,6 @@ class BasicDetails extends React.Component<IBasicDetailsProps> {
         return (
             <div className="basic-details">
                 <div className={clientIdClassName}>
-                    <div className="">
-                        <div className="subHead">{Constants.ClientId}</div>
-                    </div>
                     <dl>
                         <dt>
                             <label htmlFor="clientId" className="input-label">{Constants.ClientId}</label>
@@ -39,9 +36,6 @@ class BasicDetails extends React.Component<IBasicDetailsProps> {
                     </dl>
                 </div>
                 <div className="webhook-url">
-                    <div className="">
-                        <div className="subHead">{Constants.Webhook}</div>
-                    </div>
                     <dl>
                         <dt>
                             <label htmlFor="webhookURL" className="input-label">{Constants.WebhookURL}</label>
@@ -57,9 +51,6 @@ class BasicDetails extends React.Component<IBasicDetailsProps> {
                     </dl>
                 </div>
                 <div className="callback-url">
-                    <div className="">
-                        <div className="subHead">{Constants.Callback}</div>
-                    </div>
                     <dl>
                         <dt>
                             <label htmlFor="callbackURL" className="input-label">{Constants.CallbackURL}</label>

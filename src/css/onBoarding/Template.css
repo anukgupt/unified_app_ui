@@ -82,13 +82,7 @@ src: url('../fontFiles/segoeui.woff2'),
     font-size: 18px;
     line-height: 24px;
     color: #323130;
-    margin-left: 63px;
-}
-.onboarding-heading-create {
-    font-size: 10px;
-    line-height: 14px;
-    color: #605E5C;
-    margin-left: 63px;
+    margin: 5px 0 5px 63px;
 }
 .onboarding-form {
     margin-left: 63px;
@@ -130,7 +124,7 @@ src: url('../fontFiles/segoeui.woff2'),
     flex: 1 1 auto;
 }
 label {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 18px;
 }
 dd {
@@ -281,6 +275,7 @@ dd {
     border-radius: 2px;
     width: 162px;
     height: 24px;
+    cursor: pointer;
 }
 .create-configuration-text {
     padding-left: 15px;
@@ -295,7 +290,11 @@ dd {
     height: 24px;
     width: 150px;
     font-size: 13px;
+    cursor: pointer;
 }
+button[disabled] {
+    background-color: #DCDCDC;
+  }
 .button-image-prev, .button-image-next {
     position: relative;
     top:1px;
